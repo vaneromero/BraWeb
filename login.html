@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>BraWeb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-theme-chrome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-language-spanish.css">
+    <script src="https://cdn.jsdelivr.net/npm/offline-js"></script>
+    <script src="check-internet.js"></script>
+    <link rel="icon" href="img/logopa1.png">
+    <link href="estilos/Login.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <link rel='stylesheet' href='https://sweetalert2.github.io/styles/bootstrap4-buttons.css'>
+    <script src="js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <a href="index.html" style=" text-decoration: none;">
+                    <button class="button__icon3 fas fa-chevron-left"  >
+                    </button>
+                </a>
+            
+                <form class="login" action="#" target="" method="get" name="formDatosPersonales" id="task-form11">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Email" id="correo" required>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Código de 4 digitos"id="clave" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" maxlength="4" required >
+                    </div>
+                        <a class="button login__submit" onclick="consulta()">
+                            <span class="button__text">Iniciar Sesión</span>
+                            <i class="button__icon fas fa-chevron-right"></i>
+                        </a>                  
+                </form>
+
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+                apiKey: "AIzaSyB6_WpytoWI78VpXEYeoIOcEcv9qKNfIKo",
+                authDomain: "braillepackage-v2.firebaseapp.com",
+                databaseURL: "https://braillepackage-v2-default-rtdb.firebaseio.com",
+                projectId: "braillepackage-v2",
+                storageBucket: "braillepackage-v2.appspot.com",
+                messagingSenderId: "849155450367",
+                appId: "1:849155450367:web:31f3bd7bcbcdaec641f3ca",
+                measurementId: "G-5K83ZJ4VDX"
+            };
+        firebase.initializeApp(firebaseConfig);</script>
+    <script src="js/login.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+.contenedorGeneral{
+  width: 100%;
+  overflow: hidden;
+  margin:0 auto;
+  box-sizing: border-box;
+  }
+/*-------------Pie de Pagina-------------*/
+#pie {
+    background-color: #2f1057;
+    text-align: center;
+    width: 100%;
+    font-size: 2vw;
+    text-align: right;
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+/*-------------titulo terminos------------*/
+
+.page-content5 {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    height: 10%;
+    justify-content: right;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+  }
+  
+  .page-content5 h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #latera12{
+    width: 60%;
+      margin-top: 1vw;
+      float: right;
+  }
+  /* Para limpiar los floats */
+  .clearfix2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#container-main{
+margin-left: 1%;
+width:95%;
+min-width:320px;
+max-width:960px;
+}
+
+.accordion-container1 {
+width: 80%;
+margin: auto;
+}
+.accordion-container {
+  width: 100%;
+  margin: 0 0 2vw;
+  padding-top: 2vw;
+  clear:both;
+  margin-left: 1%;
+  margin-right: 1%;
+  }
+
+.accordion-titulo {
+position: relative;
+display: block;
+padding: 2vw;
+font-size: 2.5vw;
+font-weight: 300;
+background: #110549a1;
+border-radius: 2vw;
+color: #fff;
+text-decoration: none;
+}
+.accordion-titulo.open {
+background: #72adc8db;
+color: rgb(0, 0, 0);
+}
+.accordion-titulo:hover {
+background: #e76c6c73;
+color: #b12741;
+}
+
+.accordion-titulo span.toggle-icon:before {
+content:"▼";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+content:"▲";
+}
+
+.accordion-titulo span.toggle-icon {
+position: absolute;
+top: 20%;
+right: 20px;
+font-size: 2vw;
+}
+
+.accordion-content {
+display: none;
+padding: 20px;
+overflow: auto;
+}
+
+.accordion-content p{
+margin:0;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 2vw;
+color: black;
+text-align: justify;
+}
+@media (max-width: 699px) {
+.accordion-content {
+    padding: 10px 0;
+}
+}
+@media only screen and (min-width: 700px) {
+  .page-content5 h3 {
+    font-size: 2.5vw;
+  }
+  .accordion-titulo {
+    font-size: 2vw;
+}
+.accordion-content p {
+  font-size: 1.5vw;
+}
+#latera12 {
+  width: 35%;
+}
+#dooo{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.5vw;
+font-weight: bold;
+color: rgb(145, 13, 13);
+}
+#dooo1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  }
+}

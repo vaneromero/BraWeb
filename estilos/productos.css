@@ -1,0 +1,456 @@
+/*-------------Pie de Pagina-------------*/
+#pie {
+    background-color: #2f1057;
+    text-align: center;
+    width: 100%;
+    font-size: 2vw;
+    text-align: right;
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+/*-------------titulo herramientas-------------*/
+
+.page-content5 {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    height: 10%;
+    width: 35%;
+    justify-content: left;
+    border-top-right-radius: 40px;
+
+    border-bottom-right-radius: 40px;
+}
+
+.page-content5 h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*_--------------------Contenedor inicial----------------*/
+.fondoH{
+  margin-block-end: 1vw;
+  background: linear-gradient(#e663f759, #63e1f746);
+  border-radius: 2vw;
+}
+.prev {
+  padding-block-end: 2vw;
+  display: flex;
+  width: 100%;
+  height: 45vw;
+}
+
+#imaa {
+  width: 50%;
+  height: 50%;
+}
+#imagenHerramientas{
+  width: 100%;
+}
+
+.contener {
+    height: max-content;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 35vw;
+}
+
+#lateral {
+    width: 50%;
+    /* Este será el ancho que tendrá tu columna */
+    float: right;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+    box-sizing: border-box;
+
+}
+
+#prici {
+    width: 50%;
+    /* Este será el ancho que tendrá tu columna */
+    float: left;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+    box-sizing: border-box;
+
+}
+
+#tres22 {
+  width: 100%;
+  height: 20vw;
+}
+
+.useID {
+  margin-block-end: 1vw;
+  margin-top: 1vw;
+  margin-left: 2vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(64, 7, 102);
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+.useName {
+  margin-block-end: 2vw;
+  margin-left: 1vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(0, 0, 0);
+  font-size: 2vw;
+  text-align: justify;
+  font-weight: bolder;
+}
+
+.uso1:hover {
+  cursor: pointer;
+  background: rgb(199, 218, 252);
+  color: rgb(0, 0, 0);
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.uso1 {
+  margin-left: 18vw;
+  text-decoration: none;
+  width: 50%;
+  padding: 0.9vw 1.4vw;
+  background: rgba(143, 143, 143, 0);
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 2vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  transition: all 0.9s ease;
+  box-shadow: -5px 1px 3px 0px rgb(39 51 199);
+  border-radius: 3vw 1vw;
+}
+
+/* -------------------- titulo Traductores-------------------- */
+
+#contenedor2 {
+  text-align: right;
+  width: 100%;
+}
+
+/* Para limpiar los floats */
+.clearfix2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#lateral2 {
+  width: 45%;
+  /* Este será el ancho que tendrá tu columna */
+  float: right;
+  /* Aquí determinas de lado quieres quede esta "columna" */
+}
+
+.page-content8 {
+  background: linear-gradient(#e563f7ab, #63e1f7ab);
+  height: 10%;
+  width: 100%;
+  justify-content: right;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.page-content8 h3 {
+  margin: 1%;
+  font-size: 4vw;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3.tituloProd  {
+margin: 1%;
+font-size: 4vw;
+padding-left: 2%;
+padding-top: 1%;
+padding-bottom: 1%;
+text-align: right;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1vw 0;
+}
+section h2{
+  width: 100%;
+  color: #999;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.useName2 {
+  width: 60%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(0 0 0);
+  font-size: 2vw;
+  text-align: center;
+  text-justify: auto;
+  margin: 1vw auto;
+  border-radius: 1vw;
+  background: #d97979a6;
+  font-weight: bolder;
+}
+
+.page-content56 {
+  background: linear-gradient(#e563f7ab, #63e1f7ab);
+  height: 10%;
+  width: 65%;
+  justify-content: left;
+  border-top-right-radius: 40px;
+
+  border-bottom-right-radius: 40px;
+}
+
+.page-content56 h3 {
+  margin: 1%;
+  font-size: 4vw;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+*{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+.gallery h3{
+text-align: center;
+font-size: 2vw;
+margin: 0;
+padding-top: 10px;
+}
+.gallery a{
+text-decoration: none;
+}
+.gallery{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+align-items: center;
+margin: 50px 0;
+}
+.content{
+  background-color: #faf2eb8e;
+width: 40%;
+height: max-content;
+margin: 5px;
+box-sizing: border-box;
+float: left;
+text-align: center;
+border-radius:10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+padding-top: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: .4s;
+
+}
+.content:hover{
+box-shadow: 0 0 11px rgba(33,33,33,.2);
+transform: translate(0px, -8px);
+transition: .6s;
+}
+
+.content .conde{
+  width: 20vw;
+  height: 20vw;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+.content img{
+  width: 20vw;
+  height: 20vw;
+  object-fit: scale-down;
+  transition: all 0.5s;
+  }
+  .content img:hover{
+      transform: scale(1.2);
+      }
+.content p{
+  overflow: scroll;
+  text-align: left;
+color: #1f4150;
+font-size: 2vw;
+  height: 8vw;
+padding: 0 8px;
+}
+.content h2{
+ text-align: left;
+  color:#34223e;
+font-size: 1.8vw;
+padding: 0 8px;
+}
+.content h6{
+font-size: 3vw;
+text-align: center;
+color: #d31818;
+margin: 0;
+}
+.content ul{
+list-style-type: none;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+}
+.content i{
+padding-right: 5px;
+}
+
+.content a{
+text-align: center;
+font-size: 2.5vw;
+color: #fff;
+width: 100%;
+padding: 1vw;
+border:0px;
+outline: none;
+cursor: pointer;
+margin-top: 1vw;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+position:relative;
+}
+.buy-1{
+background-color: #2183a2;
+-webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: initial;
+  text-decoration: none;
+
+}
+
+.buy-2{
+background-color: #3b3e6e;
+-webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: initial;
+  text-decoration: none;
+}
+.buy-3{
+background-color: #0b0b0b;
+-webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: initial;
+  text-decoration: none;
+}
+.buy-4{
+  background-color: #a73bb1;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: initial;
+  text-decoration: none;
+  position:absolute;
+  bottom: 0px;
+  right:0px;
+  }
+  h3.tituloProd1 {
+    font-size: 2.5vw;
+    height: 7vw;
+}
+
+@media only screen  and (min-width: 700px){
+  .useID {
+    font-size: 4vw;
+}
+
+.useName {
+    font-size: 1.5vw;
+}
+
+#imaa {
+    background-size: 40%;
+}
+
+.uso1 {
+    margin-left: 15vw;
+    padding: 0.4vw 1vw;
+    font-size: 2vw;
+}
+.prev{
+  height: 46vw;
+}
+#tres22 {
+  width: 100%;
+  margin-top: 9vw; 
+}
+#lateral2 {
+width: 30%;
+}
+h3.tituloProd {
+font-size: 2.5vw;
+}
+.content {
+margin: 0.4vw;
+width: 19%;
+padding-top: 1vw;
+}
+.content img {
+width: 10vw;
+  height: 10vw;
+}
+.content p {
+  text-align: justify;
+font-size: 1.2vw;
+  height: 6vw;
+}
+.content h6 {
+font-size: 2vw;
+}
+.content h2 {
+font-size: 1.1vw;
+}
+.content a {
+font-size: 1.5vw;
+padding: 1vw;
+margin-top: 0.2vw;
+}
+.content .conde {
+width: 10vw;
+height: 10vw;
+}
+h3.tituloProd1{
+font-size: 1.5vw;
+height: 5vw;
+}
+.page-content56 {
+width: 40%;
+}
+.page-content56 h3 {
+font-size: 2.5vw;
+}
+.useName2 {
+font-size: 1.5vw;
+}
+}

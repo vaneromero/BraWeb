@@ -1,0 +1,3000 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>BraWeb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-theme-chrome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-language-spanish.css">
+    <script src="https://cdn.jsdelivr.net/npm/offline-js"></script>
+    <script src="js/check-internet.js"></script>
+    <link rel="icon" href="img/logopa1.png">
+    <link href="estilos/barra.css" rel="stylesheet">
+    <link href="estilos/herramientas.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+    <link href=" https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <link href="estilos/comunidad.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="estilos/avisos.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://sweetalert2.github.io/styles/bootstrap4-buttons.css'>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+</head>
+
+<body>
+    <div class="contenedorGeneral">
+        <div class="page-wrapper chiller-theme">
+            <div class="page-wrapper chiller-theme">
+                <a id="show-sidebar" class="fas fa-bars"
+                style="background-color: black; height: 1.6rem; width: 1.8rem; color: rgb(255, 255, 255); font-size: 1.5rem; align-items: center; align-content: center;text-align: center;">
+            </a>
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    <div class="sidebar-brand">
+
+                        <a href="login.html" id="login" style="text-transform: capitalize;"> <i class="fas fa-users"
+                                style="color: rgb(255, 255, 255);"></i> Iniciar Sesión</a>
+                        <a href="index.html" style="text-transform: capitalize;"> <i class="fas fa-home"
+                                style="color: rgb(255, 255, 255);"></i> Inicio</a>
+                        <div id="close-sidebar">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-header">
+                        <div class="user-pic">
+                            <img class="img-responsive img-rounded" src="img/logopa1.png" alt="User picture">
+                        </div>
+                        <div class="user-info" style="margin-top: 12px;">
+                            <span class="user-name" style="color: rgb(255, 255, 255);">
+                                <strong>BraWeb</strong>
+                            </span>
+                            <span class="user-status">
+                                <i class="fa fa-circle"></i>
+                                <span>Online</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- sidebar-search  -->
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="header-menu">
+                                <span>General</span>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-home"></i>
+                                    <span>Inicio</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">
+                                                <span>Descripción</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#page-content5">
+                                                <span>Objetivos</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#contenedor2">
+                                                <span>Metas</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#contenedor3">
+                                                <span>Problemática</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#contenedor11">
+                                                <span>Contenido</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#page-content51">
+                                                <span>Aplicaciones</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-history"></i>
+                                    <span>Historia</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="historia.html">
+                                                <span>Historia</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="historia.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fab fa-accusoft"></i>
+                                    <span>​​Herramientas</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="herramientas.html">
+                                                <span>Descripción</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="herramientas.html#contenedor2">
+                                                <span>Traductores</span>
+                                            </a>
+
+                                        </li>
+
+
+                                        <li>
+                                            <a href="herramientas.html#page-content8">
+                                                <span>Videos</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="herramientas.html#page-content563">
+                                                <span>Material de Apoyo</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="herramientas.html#tarjetas1">
+                                                <span>Recomendaciones</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="herramientas.html#respu">
+                                                <span>Respuestas de Juegos</span>
+                                            </a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="herramientas.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fab fa-autoprefixer"></i>
+                                    <span>Récords</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="records.html">
+                                                <span>Récords</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="records.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>BraApp Tutor</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="tutor.html">
+                                                <span>BraApp Tutor</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="tutor.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>BraApp Alumno</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="alumno.html">
+                                                <span>BraApp Alumno</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="alumno.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>BraApp Administradores</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+
+                                        <li>
+                                            <a href="admin.html">
+                                                <span>BraApp Administradores</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="admin.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="header-menu">
+                                <span>Extra</span>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-download"></i>
+                                    <span>Descargas de Apps</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="tutor.html#desc3">
+                                                <span>BraApp Tutor</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="alumno.html#desc4">
+                                                <span>BraApp Alumno</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-store"></i>
+                                    <span>Productos</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="productos.html#oedd">
+                                                <span>Descripción</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="productos.html#prodS">
+                                                <span>Productos Similares</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="productos.html#prodP">
+                                                <span>Productos Braille Package</span>
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="productos.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Educación Especial</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="escuela.html">
+                                                <span>Descripción</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="escuela.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>¡Conócenos!</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="conocenos.html">
+
+                                                <span>¡Conócenos!</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="conocenos.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a>
+                                    <i class="fab fa-teamspeak"></i>
+                                    <span>Términos y Condiciones</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="terminos.html">
+
+                                                <span>Términos y Condiciones</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="terminos.html#contenedor24">
+                                                <span>Comunidad</span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li id="fug">
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- sidebar-menu  -->
+                </div>
+                <!-- sidebar-content  -->
+                <div class="sidebar-footer" id="barra">
+                    <a>
+                        <i class="fab fa-facebook"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <a>
+                        <i class="fab fa-twitter"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <a>
+                        <i class="fab fa-youtube"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <a>
+                        <i class="fab fa-instagram"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <a>
+                        <i class="fab fa-tiktok"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                </div>
+            </nav>
+                <main class="page-content">
+                    <div class="fondoH">
+                        <div class="prev">
+                            <div id="tres22">
+                                <p class="useID">Herramientas</p>
+                                <p class="useName">Encontraras lo que son los traductores de Español a Braille y de Braille a Español, así como también lo que son sus derivadas como lo son la traducción a Minúsculas, Mayúsculas, Números y Símbolos. Podrá ver los videos de la realización de algunos de los materiales a realizar e poder descargar planos, manuales, etc.
+                                </p>
+                                <a href="herramientas.html#contenedor12" class="uso1">▼</a>
+                            </div>
+                            <img id="imagenHerramientas" src="img/celularesindex (3).png">
+                        </div>
+                    </div>
+
+                    <div id="contenedor2" class="clearfix2">
+
+                        <div id="lateral2">
+                            <div class="page-content8">
+                                <h3>Traductores</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <div class="page-content56">
+                            <h3>Español-Braille</h3>
+                        </div>
+                        <div id="contenedor2a" class="clearfix2">
+                            <div id="lateral22">
+                                <div class="page-content8">
+                                    <h3>Braille-Español</h3>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="contenedor12">
+                        <div class="contenedor121">
+                            <div class="tabsNav">
+                                <div class="tab">
+                                    <input type="radio" name="tabs" id="t1" checked>
+                                    <label for="t1">Minúsculas</label>
+                                    <div class="tab-content">
+                                        <div class="colum">
+                                            <div class="titul" id="titul5">La letra es: <div class="titul1"
+                                                    id="titul15">🔍
+                                                </div>
+                                            </div>
+                                            <div class="imagenTe">
+                                                <img class="mostrar" title="primera" id="mostrar"
+                                                    src="img/TarjetaWeb.png" onclick="cambiarImagenJS(title)">
+                                            </div>
+
+                                            <div class="nota">🌟Pulsar sobre la tarjeta del resultado para limpiar.
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row__inner">
+
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>a</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="a"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "a"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>b</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="b"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "b"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>c</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="c"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "c"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>d</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="d"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "d"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>e</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="e"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "e"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>f</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="f"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "f"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>g</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="g"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "g"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>h</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="h"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "h"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>i</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="i"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "i"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>j</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="j"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "j"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>k</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="k"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "k"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>l</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="l"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "l"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>m</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="m"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "m"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>n</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="n"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "n"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>ñ</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ñ"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "ñ"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>o</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="o"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "o"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>p</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="p"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "p"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>q</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="q"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "q"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>r</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="r"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "r"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>s</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="s"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "s"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>t</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="t"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "t"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>u</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="u"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "u"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>v</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="v"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "v"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>w</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="w"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "w"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>x</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="x"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "x"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>y</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="y"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "y"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>z</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="z"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "z"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>á</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="á"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "á"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>ä</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ä"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "ä"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>é</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="é"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "é"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>í</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="í"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "í"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>ó</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ó"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "ó"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>ö</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ö"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "ö"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>ú</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ú"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "ú"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>ü</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ü"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "ü"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ÿ</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="Ÿ"
+                                                        onclick="cambiarImagenJS(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ÿ"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="tabs" id="t2">
+                                    <label for="t2">Mayúsculas</label>
+                                    <div class="tab-content">
+                                        <div class="colum1">
+                                            <div class="titul" id="titul5" style="background-color: cian;">La letra es:
+                                                <div class="titul1" id="titul155">🔍</div>
+                                            </div>
+                                            <div class="imagenTe">
+                                                <img class="mostrar1" title="primera" id="mostrar1"
+                                                    src="img/TarjetaWeb.png" onclick="cambiarImagenJS1(title)">
+                                            </div>
+                                            <div class="imagenTe">
+                                                <img class="mostrar2" title="primera" id="mostrar2"
+                                                    src="img/TarjetaWeb.png" onclick="cambiarImagenJS1(title)">
+                                            </div>
+                                            <div class="nota">🌟Pulsar sobre la tarjeta del resultado para
+                                                limpiar.<br>🌟La tarjeta izquierda es el prefijo y la derecha la letra.
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row__inner">
+
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>A</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="a"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "A"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>B</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="b"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "B"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>C</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="c"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "C"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>D</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="d"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "D"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>E</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="e"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "E"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>F</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="f"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "F"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>G</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="g"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "G"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>H</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="h"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "H"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>I</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="i"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "I"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>J</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="j"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "J"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>K</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="k"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "K"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>L</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="l"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "L"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>M</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="m"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "M"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>N</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="n"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "N"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ñ</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ñ"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ñ"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>O</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="o"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "O"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>P</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="p"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "P"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Q</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="q"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Q"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>R</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="r"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "R"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>S</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="s"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "S"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>T</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="t"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "T"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>U</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="u"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "U"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>V</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="v"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "V"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>W</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="w"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "W"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>X</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="x"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "X"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Y</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="y"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Y"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Z</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="z"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Z"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Á</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="á"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Á"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ä</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ä"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ä"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>É</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="é"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "É"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Í</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="í"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Í"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ó</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ó"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ó"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ö</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ö"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ö"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ú</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ú"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ú"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ü</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="ü"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ü"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>Ÿ</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="Ÿ"
+                                                        onclick="cambiarImagenJS1(title)">
+                                                        <div class="tile__title">
+                                                            Letra "Ÿ"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="tabs" id="t3">
+                                    <label for="t3">Números </label>
+                                    <div class="tab-content">
+                                        <div class="colum1">
+                                            <div class="titul4" id="titul54">El número  es: <div class="titul14"
+                                                    id="titul1555">🔍</div>
+                                            </div>
+                                            <div class="imagenTe">
+                                                <img class="mostrar3" title="primera" id="mostrar3"
+                                                    src="img/TarjetaWeb.png" onclick="cambiarImagenJS2(title)">
+                                            </div>
+                                            <div class="imagenTe">
+                                                <img class="mostrar4" title="primera" id="mostrar4"
+                                                    src="img/TarjetaWeb.png" onclick="cambiarImagenJS2(title)">
+                                            </div>
+                                            <div class="nota">🌟Pulsar sobre la tarjeta del resultado para limpiar.
+                                                <br>🌟La tarjeta izquierda es el prefijo y la derecha el Número.
+                                                <br>🌟Solo se muestran los numeros naturales.
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row__inner">
+
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>1</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="a"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "1"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>2</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="b"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "2"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>3</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="c"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "3"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>4</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="d"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "4"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>5</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="e"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "5"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>6</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="f"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "6"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>7</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="g"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "7"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>8</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="h"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "8"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>9</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="i"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "9"
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile">
+                                                    <div class="tile__media">
+                                                        <div class="titul">
+                                                            <h1>0</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile__details" title="j"
+                                                        onclick="cambiarImagenJS2(title)">
+                                                        <div class="tile__title">
+                                                            Numero "0"
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="tabs" id="t4">
+                                    <label for="t4">Símbolos</label>
+                                    <div>
+                                        <div id="estructura">
+                                            <div class="colum">
+                                                <div class="titul4" id="titul56">El símbolo es: <div class="titul14"
+                                                        id="titul156">🔍</div>
+                                                </div>
+                                                <div class="imagenTe">
+                                                    <img class="mostrar56" title="primera" id="mostrar56"
+                                                        src="img/TarjetaWeb.png" onclick="cambiarImagenJS3(title)">
+                                                </div>
+
+                                                <div class="nota">🌟Pulsar sobre la tarjeta del resultado para
+                                                    limpiar.<br>🌟Solo se muestran los simbolos mas utilizados.</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row__inner">
+
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>.</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="punto"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "."
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>,</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="coma"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo ","
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>;</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="punto_coma"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo ";"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>:</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="dos_puntos"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo ":"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>¡!</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="signos_interrogacion"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "¡!"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>=</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="igual"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "="
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>¿?</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="signos_admiracion"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "¿?"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>(</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="parentesis_abrir"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "("
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>)</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="parentesis_cerrar"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo ")"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>*</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="asterisco"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "*"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>»</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="doble_flecha"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "»"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>@</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="arroba"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "@"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>_</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="guion_bajo"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "_"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>/</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="diagonal"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "/"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>|</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="barra_vertical"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "|"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>^</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="exponencial"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "^"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>#</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="Numeros"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "#"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>Ç</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="simbolo_c"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "Ç"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>[</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="corchete_abrir"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "["
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>]</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="corchete_cerrar"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "]"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>x</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="multiplicar"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "x"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>÷</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="dividir"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "÷"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>+</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="suma"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "+"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile">
+                                                        <div class="tile__media">
+                                                            <div class="titul">
+                                                                <h1>-</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile__details" title="resta"
+                                                            onclick="cambiarImagenJS3(title)">
+                                                            <div class="tile__title">
+                                                                Símbolo "-"
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contenedor2b" class="clearfix2">
+                            <div id="lateral22">
+                                <div class="page-content8">
+                                    <h3>Braille-Español</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contenedor122">
+                            <div class="tabsNav1">
+                                <div class="tab">
+                                    <input type="radio" name="tabs1" id="t11" checked>
+                                    <label for="t11">Minúsculas</label>
+                                    <div class="tab-content">
+                                        <div class="contener">
+
+                                            <div id="uno221">
+                                                <div id="prici">
+                                                    <div class="bot1">
+                                                        <div class="boton1" id="btn1">1</div>
+                                                        <div class="boton1" id="btn2">2</div>
+                                                        <div class="boton1" id="btn3">3</div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="lateral">
+                                                    <div class="bot1">
+                                                        <div class="boton1" id="btn4">4</div>
+                                                        <div class="boton1" id="btn5">5</div>
+                                                        <div class="boton1" id="btn6">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="dos221">
+                                                <div class="bot1">
+                                                    <img class="verificar" title="verficar" id="verificar"
+                                                        src="img/verificado.png">
+                                                    <br>
+                                                    <img class="borrar" title="borrar" id="borrar" src="img/borrar.png">
+                                                </div>
+                                            </div>
+                                            <div id="tres221">
+                                                <div class="titul4" id="titul56">La letra es: <div class="titul14"
+                                                        id="titul15677">🔍</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="tabs1" id="t21">
+                                    <label for="t21">Mayúsculas</label>
+                                    <div class="tab-content">
+                                        <div class="contener">
+
+                                            <div id="uno2211">
+                                                <div class="titul11" id="titul511">Prefijo:
+                                                </div>
+                                                <div id="prici">
+                                                    <div class="bot1">
+                                                        <div class="boton1">1</div>
+                                                        <div class="boton1">2</div>
+                                                        <div class="boton1">3</div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="lateral">
+                                                    <div class="bot1">
+                                                        <div class="boton1" style="background-color:rgb(100, 23, 40) ;">
+                                                            4</div>
+                                                        <div class="boton1">5</div>
+                                                        <div class="boton1" style="background-color:rgb(100, 23, 40) ;">
+                                                            6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="uno2211">
+                                                <div class="titul11" id="titul511">Letra:
+                                                </div>
+                                                <div id="prici">
+                                                    <div class="bot1">
+                                                        <div class="boton1" id="btn11">1</div>
+                                                        <div class="boton1" id="btn21">2</div>
+                                                        <div class="boton1" id="btn31">3</div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="lateral">
+                                                    <div class="bot1">
+                                                        <div class="boton1" id="btn41">4</div>
+                                                        <div class="boton1" id="btn51">5</div>
+                                                        <div class="boton1" id="btn61">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="dos2211">
+                                                <div class="bot1">
+                                                    <img class="verificar1" title="verficar1" id="verificar1"
+                                                        src="img/verificado.png">
+                                                    <br>
+                                                    <img class="borrar1" title="borrar1" id="borrar1"
+                                                        src="img/borrar.png">
+                                                </div>
+                                            </div>
+                                            <div id="tres2211">
+                                                <div class="titul4" id="titul56">La letra es: <div class="titul14"
+                                                        id="titul156771">🔍</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="tabs1" id="t31">
+                                    <label for="t31">Números</label>
+                                    <div class="tab-content">
+                                        <div class="contener">
+
+                                            <div id="uno2211">
+                                                <div class="titul11" id="titul511">Prefijo:
+                                                </div>
+                                                <div id="prici">
+                                                    <div class="bot1">
+                                                        <div class="boton1">1</div>
+                                                        <div class="boton1">2</div>
+                                                        <div class="boton1" style="background-color:rgb(100, 23, 40) ;">
+                                                            3</div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="lateral">
+                                                    <div class="bot1">
+                                                        <div class="boton1" style="background-color:rgb(100, 23, 40) ;">
+                                                            4</div>
+                                                        <div class="boton1" style="background-color:rgb(100, 23, 40) ;">
+                                                            5</div>
+                                                        <div class="boton1" style="background-color:rgb(100, 23, 40) ;">
+                                                            6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="uno2211">
+                                                <div class="titul11" id="titul511">Número:
+                                                </div>
+                                                <div id="prici">
+                                                    <div class="bot1">
+                                                        <div class="boton1" id="btn111">1</div>
+                                                        <div class="boton1" id="btn211">2</div>
+                                                        <div class="boton1" id="btn311">3</div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="lateral">
+                                                    <div class="bot1">
+                                                        <div class="boton1" id="btn411">4</div>
+                                                        <div class="boton1" id="btn511">5</div>
+                                                        <div class="boton1" id="btn611">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="dos2211">
+                                                <div class="bot1">
+                                                    <img class="verificar11" title="verficar11" id="verificar11"
+                                                        src="img/verificado.png">
+                                                    <br>
+                                                    <img class="borrar11" title="borrar11" id="borrar11"
+                                                        src="img/borrar.png">
+                                                </div>
+                                            </div>
+                                            <div id="tres2211">
+                                                <div class="titul4" id="titul56">El número es: <div class="titul14"
+                                                        id="titul1567711">🔍</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="tabs1" id="t41">
+                                    <label for="t41">Símbolos</label>
+                                    <div>
+                                        <div id="estructura">
+                                            <div class="contener">
+                                                <div id="uno221">
+                                                    <div id="prici">
+                                                        <div class="bot1">
+                                                            <div class="boton1" id="btn1111">1</div>
+                                                            <div class="boton1" id="btn2111">2</div>
+                                                            <div class="boton1" id="btn3111">3</div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div id="lateral">
+                                                        <div class="bot1">
+                                                            <div class="boton1" id="btn4111">4</div>
+                                                            <div class="boton1" id="btn5111">5</div>
+                                                            <div class="boton1" id="btn6111">6</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="dos221">
+                                                    <div class="bot1">
+                                                        <img class="verificar111" title="verficar111" id="verificar111"
+                                                            src="img/verificado.png">
+                                                        <br>
+                                                        <img class="borrar111" title="borrar111" id="borrar111"
+                                                            src="img/borrar.png">
+                                                    </div>
+                                                </div>
+                                                <div id="tres221">
+                                                    <div class="titul4" id="titul56">El símbolo es: <div class="titul14"
+                                                            id="titul15677111">🔍</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <br> <br>
+                    <div class="page-content563" id="page-content563">
+                        <h3>Material de Apoyo</h3>
+                    </div>
+                    <div class="textInfo">
+                        <div class="TextoInfo">
+                            Podrás descargar los archivos que gustes, ya sea para imprimir directamente o hacer modificaciones según sea el gusto. Nota: Se recomienda que utilice nuestros Códigos QR, ya que en ocasiones no otro tipo de códigos. Entra en el siguiente enlace para ver los códigos qr independientes.<br>
+                            <div id="btntres"></div>
+                        </div>
+                        <div class="Mas2" id="Mas2">
+
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Nombre</th>
+                                        <th id="da3">Visualizar</th>
+                                        <th id="da3">Descargar PDF</th>
+                                        <th id="da3">Descargar Word</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="Documentos">
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div id="contenedor2" class="clearfix2">
+
+                        <div id="lateral2">
+                            <div class="page-content8" id="page-content8">
+                                <h3>Memorama 2 en 1</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div id="contenedor41">
+
+                    </div>
+                    <br>
+                    <div class="page-content5613">
+                        <h3>Rompecabezas</h3>
+                    </div>
+                    <br>
+                    <div id="contenedor411">
+
+                    </div>
+                    <br>
+                    <div id="contenedor2" class="clearfix2">
+
+                        <div id="lateral212">
+                            <div class="page-content8">
+                                <h3>Material de apoyo e utilidad</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div id="contenedor4111">
+
+                    </div>
+                    <br>
+                    <div class="page-content563">
+                        <h3>Recomendaciones</h3>
+                    </div>
+
+                    <div id="tarjetas1" class="tarjeta1">
+
+                    </div>
+
+                    <br>
+                    <div id="contenedor2" class="clearfix2">
+
+                        <div id="lateral212">
+                            <div class="page-content8" id="respu">
+                                <h3>Respuestas de Adivinanzas</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="page-content5633">
+                        <h3>Minúsculas y Mayúsculas</h3>
+                    </div>
+                    <br>
+                    <div id="tarjetas2" class="tarjeta2">
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>a & A</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>a</h3>
+                                <p>Yo fui tu primer sonido cuando empezaste a hablar y soy la primera letra que en el
+                                    alfabeto está.</p>
+
+                                <h3>A</h3>
+                                <p>Piensa y lo adivinarás… ¿Qué tiene Adelita delante que Eva tiene detrás?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>b & B</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>b</h3>
+                                <p>Porque bien gordita estoy, dos barrigas me verás. No me gustan los viajes y en el
+                                    barco
+                                    me veras.</p>
+
+                                <h3>B</h3>
+                                <p>Cuando soy pequeña tengo solo una barriguita, pero cuando me quedo mayor mi barriga
+                                    se
+                                    divide en dos ¿Quién soy?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>c & C</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>c</h3>
+                                <p>Me puedes encontrar muy al final del amanecer, nunca al mediodía ni en la tarde, pero
+                                    sí
+                                    en el medio de la noche ¿Quién soy?.</p>
+
+                                <h3>C</h3>
+                                <p>Una raja de melón de la comida al final y los cuernos de la luna cuando menguante
+                                    está.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>d & D</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>d</h3>
+                                <p>En los dedos tengo dos, en los dientes tengo uno, pero en las piernas, manos y
+                                    brazos,
+                                    ninguno. ¿Qué será?</p>
+
+                                <h3>D</h3>
+                                <p>Yo soy letra tan escasa, que en dos sólo verás una y entra una en la docena</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>e & E</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>e</h3>
+                                <p>Como un tenedor, pero sin asa. Así dicen que soy los que me graban.</p>
+
+                                <h3>E</h3>
+                                <p>En medio del cielo estoy, sin ser lucero ni estrella, sin ser sol ni luna bella. ¡A
+                                    ver
+                                    si sabes quién soy!</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>f & F</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>f</h3>
+                                <p>Le sirve de puerta al frío y al fuego, es final en nombres rusos y mediadora en
+                                    oferta
+                                    ¿Qué letra soy?</p>
+
+                                <h3>F</h3>
+                                <p>Soy la letra del desfile y el sonido del pinchazo, sólo tres palitos tengo y a los
+                                    Felipes empiezo</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>g & G</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>g</h3>
+                                <p>Generosa gracias a ti existe, y en garganta dos veces insiste. ¿Quién soy?</p>
+
+                                <h3>G</h3>
+                                <p>Gracias siempre la lleva consigo, y guapa, y también garbanzo. ¿Sabes ya de qué
+                                    letrita
+                                    te hablo?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>b & B</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>b</h3>
+                                <p></p>
+
+                                <h3>B</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>h & H</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>h</h3>
+                                <p>Aunque mi sonido es mudo, cuando me nombran parezco a un estornudo ¿Quién soy?</p>
+
+                                <h3>H</h3>
+                                <p>Aunque diciendo mi nombre des tú casi un estornudo, hacha me tiene en su vientre pero
+                                    mi
+                                    sonido es mudo.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>i & I</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>i</h3>
+                                <p>Soy un palito muy derechito y encima de la frente llevo un mosquito que ni pica ni
+                                    vuela
+                                    ni toca la vihuela.</p>
+
+                                <h3>I</h3>
+                                <p>Entre todas mis hermanas, soy la que he crecido menos; jamás en España estoy, pero en
+                                    Madrid sí me encuentro.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>j & J</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>j</h3>
+                                <p>No me pronunciéis dos veces, que tengo sonido feo; siendo la letra del kilo, en
+                                    carreteras me veo.</p>
+
+                                <h3>J</h3>
+                                <p>Por la cabeza me danza esta gran adivinanza: la letra más bailadora resultó ser
+                                    servidora. ¿Cuál es?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>k & K</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>k</h3>
+                                <p>No me pronunciéis dos veces, que tengo sonido feo; siendo la letra del kilo, en
+                                    carreteras me veo</p>
+
+                                <h3>K</h3>
+                                <p>Primera en el kiwi, tambien en kimono, no esta en banana, y tampoco en el mono.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>l & L</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>l</h3>
+                                <p>Empieza en luna termina en sol.</p>
+
+                                <h3>L</h3>
+                                <p>En Melilla hay tres, en Madrid ninguna, en Castilla dos y en Galicia una.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>m & M</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>m</h3>
+                                <p>Una vez en un minuto, dos veces en un momento, tres veces en mimetismo, y en cuatro,
+                                    ¡no
+                                    la encuentro!.</p>
+
+                                <h3>M</h3>
+                                <p>¿Qué es lo que se repite una vez cada minuto, dos veces cada momento y nunca en cien
+                                    años?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>n & N</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>n</h3>
+                                <p>Suelen tenerla los puentes, pero no los viaductos. como también las fuentes. ¿Qué
+                                    será?
+                                </p>
+
+                                <h3>N</h3>
+                                <p>¡Nana, nanita, nanita, ea! ¿Cuál es esa letrita que tanto suena?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>ñ & Ñ</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>ñ</h3>
+                                <p>Aunque lleve turbante mora no soy, que solo en castellano de letra estoy</p>
+
+                                <h3>Ñ</h3>
+                                <p>Estoy en medio del año, y casi al final del castaño y del otoño ¿Quién soy?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>o & O</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>o</h3>
+                                <p>Una cosa quisicosa, de ovalada construcción, todos los nombres la tiene, pero las
+                                    mujeres, no. El Obispo como todos también tiene dos.</p>
+
+                                <h3>O</h3>
+                                <p>Tengo forma de anillo, y soy la primera y la última en organillo.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>p & P</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>p</h3>
+                                <p>Como una B pero sin barriga. Me encontrarás al comienzo de Pancho, Paco y Pandora.
+                                </p>
+
+                                <h3>P</h3>
+                                <p>José, dicho entre amigos, repite siempre esta letra; también es la de los padres y la
+                                    de
+                                    Pedros y Petras.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>q & Q</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>q</h3>
+                                <p>Estoy en el mosquito pero no en la hormiguita. No me tiene en el grillo pero sí en la
+                                    mariquita ¿Qué letra soy?.</p>
+
+                                <h3>Q</h3>
+                                <p>Estoy en el mosquito pero no en la hormiguita. No me tiene en el grillo pero sí en la
+                                    mariquita ¿Qué letra soy?.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>r & R</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>r</h3>
+                                <p>La tiene el tigre pero no el león dos veces el perro y una el ratón.</p>
+
+                                <h3>R</h3>
+                                <p>Formo parte de París, en el fin del mar me encuentro, en el principio de Roma y, del
+                                    Norte, estoy en el centro.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>s & S</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>s</h3>
+                                <p>Desde el lunes hasta el viernes, soy la última en llegar, el sábado soy la primera y
+                                    el
+                                    domingo a descansar.</p>
+
+                                <h3>S</h3>
+                                <p>En cualquier día de la semana me verás, excepto en domingo que no me encontrarás.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>t & T</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>t</h3>
+                                <p>Te la digo y no la sabes, te la vuelvo a repetir, te la digo 3 veces y no la sabes
+                                    decir.
+                                </p>
+
+                                <h3>T</h3>
+                                <p>La tienes en Torremocha y hacia el final de Albacete, y, dondequiera que estés, a las
+                                    tres como a las siete</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>u & U</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>u</h3>
+                                <p>¿Sabes de alguna letrita, que si la vuelta le das, enseguida se convierte de
+                                    consonante
+                                    en vocal?</p>
+
+                                <h3>U</h3>
+                                <p>El burro la lleva a cuestas, metidas está en el baúl yo no la tuve jamás y siempre la
+                                    tienes tú ¿Quién soy?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>v & V</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>v</h3>
+                                <p>En la vaca estoy, en el viento voy, si en burro me ves en ortografía vas al revés.
+                                </p>
+
+                                <h3>V</h3>
+                                <p>Vanessa la lleva al principio, y Violeta, y también Víctor. Veleta y venado se
+                                    apuntan.
+                                    ¿sabes qué letra es la que llevan?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>w & W</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>w</h3>
+                                <p>Wamba y Witiza me tienen de pie, Víctor sólo a medias y Muza al revés.</p>
+
+                                <h3>W</h3>
+                                <p>Cuando estoy de pie puedes confundirme con dos letras. Cuando estoy al revés suelen
+                                    confundirme con una letra ¿Quién soy?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>x & X</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>x</h3>
+                                <p>Es una cruz muy bonita, molino de aspas son. ¿Qué letra puede ser esta, que se emplea
+                                    en
+                                    multiplicación?¿Cuál será?.
+                                </p>
+
+                                <h3>X</h3>
+                                <p>Es una cruz muy bonita, molino de aspas son. ¿Qué letra puede ser esta, que se emplea
+                                    en
+                                    multiplicación?¿Cuál será?.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>y & Y</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>y</h3>
+                                <p>Tengo una pierna y no camino ni salto, tengo dos brazos y no puedo aplaudir. ¿Quién
+                                    soy?
+                                </p>
+
+                                <h3>Y</h3>
+                                <p>Soy hermana de la V, pero con un palito de más. Me llevas en un pronombre, si de ti
+                                    quieres hablar</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>z & Z</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>z</h3>
+                                <p>La última de todas soy, pero en zurdo y zapato primera voy.</p>
+
+                                <h3>Z</h3>
+                                <p>Una letra pizpireta, de perdiz y cazoleta que se esconde en la maceta.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div id="contenedor2" class="clearfix2">
+
+                        <div id="lateral21">
+                            <div class="page-content8">
+                                <h3>Números y Símbolos</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div id="tarjetas2" class="tarjeta2">
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>.</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>.</h3>
+                                <p>Muy chiquito, chiquito, pone fin a lo escrito.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>¿?</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>¿?</h3>
+                                <p>Termino cabeza arriba y empiezo cabeza abajo, y tan sólo a preguntar se limita mi
+                                    trabajo.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>1</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>1</h3>
+                                <p>Un agricultor tiene tres montones de paja en el pajar y cuatro en el prado. Si los
+                                    junta
+                                    ¿cuántos montones tiene?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>2</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>2</h3>
+                                <p>Tengo forma de patito, soy arqueado y redondito. ¿Quién soy?.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>3</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>3</h3>
+                                <p>En una pecera 2 peces van delante de un pez, 2 peces van detrás de un pez, y un pez
+                                    entre
+                                    dos peces, ¿Cuántos peces hay?.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>4</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>4</h3>
+                                <p>Soy como una escalerita o como un hombre sentado, y cuando se habla de patas, soy las
+                                    que
+                                    tienen los bancos.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>5</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>5</h3>
+                                <p>¿Qué número tiene tantas letras en su nombre como lo indica el valor de su cifra?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>6</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>6</h3>
+                                <p>Este era un número impar, pero un día la vuelta se dio bocabajo se quedó y en un
+                                    numero
+                                    par se convirtió.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>7</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>7</h3>
+                                <p>Si quieres saber qué número soy, espera a que llueva. Contando los colores del
+                                    arcoíris
+                                    tendrás la prueba.</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>8</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>8</h3>
+                                <p>Un caracol se cayó en un pozo de 11 metros, cada día sube 3 metros y al dormirse baja
+                                    2
+                                    ¿En cuántos días saldrá el caracol del pozo?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>9</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>9</h3>
+                                <p>¿Cuál es el número que si lo pones de manos vale menos?</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="face front">
+                                <img src="img/base4.png" alt="">
+                                <h3>0</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>0</h3>
+                                <p>Redondo soy y es cosa anunciada que a la derecha algo valgo, pero a la izquierda
+                                    nada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comunidad">
+                        <div id="contenedor24" class="clearfix2">
+    
+                            <div id="lateral24">
+                                <div class="page-content84">
+                                    <h3>Comunidad</h3>
+                                </div>
+    
+                                <a class="boton4f5" id="boton4f5" onclick="mostrar65()">
+                                    <span class="circle67"><svg xmlns="http://www.w3.org/2000/svg" width="2vw"
+                                            height="2vw" fill="currentColor" class="bi bi-fingerprint"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                                            <path
+                                                d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z" />
+                                            <path
+                                                d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                                            <path
+                                                d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z" />
+                                            <path
+                                                d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
+                                        </svg></span>
+                                    <span class="title67">Escribir Comentario</span>
+    
+                                </a>
+                                <a class="boton4f5t" id="boton4f5t" onclick="mostrar65t()" style="display: none;">
+                                    <span class="circle67"><svg xmlns="http://www.w3.org/2000/svg" width="2vw"
+                                            height="2vw" fill="currentColor" class="bi bi-fingerprint"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                                            <path
+                                                d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z" />
+                                            <path
+                                                d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                                            <path
+                                                d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z" />
+                                            <path
+                                                d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
+                                        </svg></span>
+                                    <span class="title67">Presiona para ocultar</span>
+    
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div id="fomr" style="display: none;">
+                            <div class="form-structor">
+                                <div id='search-box'>
+                                    <div class="search-form">
+                                        <input type="text" name="buscar" id='search-text' placeholder="Buscar..."
+                                            class="search-text">
+                                        <button id='search-button' onclick="buscar()">Buscar</a>
+                                    </div>
+                                </div>
+                                <div class="signup">
+                                    <h2 class="form-title" id="signup">Escribe tu Comentario:</h2>
+                                    <div class="form-holder">
+    
+                                        <input type="text" class="input" name="nombre" id="nombre"
+                                            placeholder="Escribe tu nombre" maxlength="100" required />
+                                        <input type="email" class="input" name="email" id="email" placeholder="Email"
+                                            required />
+                                        <textarea name="mensaje" id="mensaje" class="input1" for="mensaje"
+                                            placeholder="Mensaje" maxlength="200" required></textarea>
+    
+    
+                                    </div>
+                                    <button class="submit-btn" onclick="enviar()">Enviar</button>
+                                </div>
+                                <div class="login slide-up">
+                                    <div class="center">
+    
+                                        <button class="submit-btn1" onclick="reset()">Refrescar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenid">
+                            <!-- Contenedor Principal -->
+                            <div class="comments-container" style="overflow: scroll;height: 40vw;">
+                                <ul id="tasks-container" class="comments-list">
+    
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <main class="page-content">
+                        <div id="botonAbrir"><a id="abrirAviso" onclick="abrir()"><i id="fas1"
+                                    class="fas fa-bell"></i><span class="badge-sonar1"></span></a></div>
+                        <div id="barraflotantewcv">
+                            <div id="barraAvisos">
+                                <div id="barraAvisos2">
+                                    <a id="cerrarAviso" onclick="cerrar()"><i id="fas1"
+                                            class="fas fa-times-circle"></i></a>
+                                </div>
+                                <div id="barraAvisos1">
+                                    <h3 id="tituloAvisos">Avisos</h3>
+                                </div>
+
+                            </div>
+
+                            <div id="listaAvisos">
+
+                            </div>
+
+                        </div>
+
+                    </main>
+                    <span class="ir-arriba"><i class="fas fa-angle-up"></i></span>
+                </main>
+                <div id="pie">©2022 BraillePackage</div>
+            </div>
+
+
+            <!-- page-wrapper -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+            <script src="js/jquery.js"></script>
+
+
+            <!-- FIREBASE -->
+            <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+
+            <script>
+                const firebaseConfig = {
+                apiKey: "AIzaSyB6_WpytoWI78VpXEYeoIOcEcv9qKNfIKo",
+                authDomain: "braillepackage-v2.firebaseapp.com",
+                databaseURL: "https://braillepackage-v2-default-rtdb.firebaseio.com",
+                projectId: "braillepackage-v2",
+                storageBucket: "braillepackage-v2.appspot.com",
+                messagingSenderId: "849155450367",
+                appId: "1:849155450367:web:31f3bd7bcbcdaec641f3ca",
+                measurementId: "G-5K83ZJ4VDX"
+            };
+                firebase.initializeApp(firebaseConfig);</script>
+            <script src="js/Movbarra.js"></script>
+            <script src="js/herramientas.js"></script>
+        </div>
+</body>
+
+</html>

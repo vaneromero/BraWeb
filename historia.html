@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable="yes">
+    <title>BraWeb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-theme-chrome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-language-spanish.css">
+    <script src="https://cdn.jsdelivr.net/npm/offline-js"></script>
+    <script src="js/check-internet.js"></script>
+    <link rel="icon" href="img/logopa1.png">
+    <link href="estilos/barra.css" rel="stylesheet">
+    <link href="estilos/avisos.css" rel="stylesheet">
+    <link href="estilos/historia.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="estilos/comunidad.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://sweetalert2.github.io/styles/bootstrap4-buttons.css'>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+
+
+</head>
+
+<body>
+    <div class="contenedorGeneral">
+    <div class="page-wrapper chiller-theme">
+        <div class="page-wrapper chiller-theme">
+            <a id="show-sidebar" class="fas fa-bars"
+            style="background-color: black; height: 1.6rem; width: 1.8rem; color: rgb(255, 255, 255); font-size: 1.5rem; align-items: center; align-content: center;text-align: center;">
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+
+                    <a href="login.html" id="login" style="text-transform: capitalize;"> <i class="fas fa-users"
+                            style="color: rgb(255, 255, 255);"></i> Iniciar Sesión</a>
+                    <a href="index.html" style="text-transform: capitalize;"> <i class="fas fa-home"
+                            style="color: rgb(255, 255, 255);"></i> Inicio</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/logopa1.png" alt="User picture">
+                    </div>
+                    <div class="user-info" style="margin-top: 12px;">
+                        <span class="user-name" style="color: rgb(255, 255, 255);">
+                            <strong>BraWeb</strong>
+                        </span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>General</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-home"></i>
+                                <span>Inicio</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <span>Descripción</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#page-content5">
+                                            <span>Objetivos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor2">
+                                            <span>Metas</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor3">
+                                            <span>Problemática</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor11">
+                                            <span>Contenido</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#page-content51">
+                                            <span>Aplicaciones</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-history"></i>
+                                <span>Historia</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="historia.html">
+                                            <span>Historia</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="historia.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fab fa-accusoft"></i>
+                                <span>​​Herramientas</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="herramientas.html">
+                                            <span>Descripción</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#contenedor2">
+                                            <span>Traductores</span>
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+                                        <a href="herramientas.html#page-content8">
+                                            <span>Videos</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#page-content563">
+                                            <span>Material de Apoyo</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#tarjetas1">
+                                            <span>Recomendaciones</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#respu">
+                                            <span>Respuestas de Juegos</span>
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="herramientas.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fab fa-autoprefixer"></i>
+                                <span>Récords</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="records.html">
+                                            <span>Récords</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="records.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>BraApp Tutor</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="tutor.html">
+                                            <span>BraApp Tutor</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="tutor.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>BraApp Alumno</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="alumno.html">
+                                            <span>BraApp Alumno</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="alumno.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>BraApp Administradores</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+
+                                    <li>
+                                        <a href="admin.html">
+                                            <span>BraApp Administradores</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="admin.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-download"></i>
+                                <span>Descargas de Apps</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="tutor.html#desc3">
+                                            <span>BraApp Tutor</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="alumno.html#desc4">
+                                            <span>BraApp Alumno</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-store"></i>
+                                <span>Productos</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="productos.html#oedd">
+                                            <span>Descripción</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="productos.html#prodS">
+                                            <span>Productos Similares</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="productos.html#prodP">
+                                            <span>Productos Braille Package</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="productos.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Educación Especial</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="escuela.html">
+                                            <span>Descripción</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="escuela.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-user-friends"></i>
+                                <span>¡Conócenos!</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="conocenos.html">
+
+                                            <span>¡Conócenos!</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="conocenos.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fab fa-teamspeak"></i>
+                                <span>Términos y Condiciones</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="terminos.html">
+
+                                            <span>Términos y Condiciones</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terminos.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li id="fug">
+
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer" id="barra">
+                <a>
+                    <i class="fab fa-facebook"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-twitter"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-youtube"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-instagram"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-tiktok"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+            </div>
+        </nav>
+        <main class="page-content">
+            <div id="contenedor2" class="clearfix2">
+                <div id="latera12">
+                    <div class="page-content5">
+                        <h3>Historia de Lenguaje B​raille</h3>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="linea-tiempo">
+
+                <div class="momento">
+                    <h3>1812</h3>
+                    <div class="descripcion">
+                        <div class="textH">
+                            Louis Braille, después de haber perdido la vista en 1812 a la edad de 5 años por una infección
+                            en los ojos ocasionada por un accidente mientras jugaba en el taller de arneses de su padre.
+                        </div>
+                        
+                        <br><img src="img/Louis-Braille_0.jpg"></img>
+                    </div>
+                </div>
+                <div class="momento">
+                    <h3>1825</h3>
+                    <div class="descripcion">
+                        <div class="textH">
+                            Louis Braille entra a estudiar en la Real Instituto para la juventud Ciega (RIJC) de
+                            Francia, donde conoció los primeros libros impresos en relieve creados por el fundador de la
+                            escuela Valentín Haüy. Estos libros requerían del uso del tacto para recorrer cada letra de
+                            inicio a fin para así saber cómo formar palabras y frases.
+                        </div>
+                        
+                        <br><img src="img/escuela.jpg"></img>
+                    </div>
+                </div>
+                <div class="momento">
+                    <h3>1829</h3>
+                    <div class="descripcion">
+                        <div class="textH">
+                        Louis Braille retomo la idea de Valentín para mejorar el sistema de lectura y escritura y en
+                        1829 dio a conocer su primera versión del sistema de lectura el cual consistía en recorrer las
+                        letras de una palabra con la yema del dedo y así solo sería necesario tocar la letra una vez
+                        para poder identificarla, el sistema que diseñó no sólo representaba letras sino también los
+                        números, los signos de puntuación y acentuación y algunas de las contracciones más usuales de
+                        los idiomas occidentales.
+                        </div>
+                        
+                        <br><img src="img/valentin.jpg" ></img>
+                    </div>
+                </div>
+                <div class="momento">
+                    <h3>1837</h3>
+                    <div class="descripcion">
+                        <div class="textH">
+                        El sistema fue presentado en su modelo más completo en 1837.
+                    </div>
+                        <br> <img src="img/lec.jpg" ></img>
+                    </div>
+                </div>
+                <div class="momento">
+                    <h3>La creación del sistema.</h3>
+                    <div class="descripcion">
+                        <div class="textH">
+                            El nuevo sistema braille diseñado usaba una lezna para crear los puntos con relieve en la hoja
+                            de papel y para asegurar que las líneas quedaran en línea recta usaba una rejilla plana. De esta
+                            manera el sistema de Louis Braille fue más eficiente para identificar las letras y poder leer
+                            oraciones, así como también creo un sistema para escribir notas musicales ya que le gustaba
+                            mucho la música. Posteriormente Louis Braille falleció a los 43 años por tuberculosis.
+                        </div>
+                        
+                        <br><img src="img/completo.jpg" ></img>
+                    </div>
+                </div>
+                <div class="momento">
+                    <h3>Actualmente</h3>
+                    <div class="descripcion">
+                        <div class="textH">
+                            El nuevo sistema braille diseñado, usaba una lezna para crear los puntos con relieve en la hoja
+                            de papel y para asegurar que las líneas quedaran en línea recta usaba una rejilla plana. De esta
+                            manera el sistema de Louis Braille fue más eficiente para identificar las letras y poder leer
+                            oraciones, así como también creo un sistema para escribir notas musicales ya que le gustaba
+                            mucho la música. Posteriormente Louis Braille falleció a los 43 años por tuberculosis.
+                        </div>
+                        
+                        <br><img src="img/notas.jpg"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="comunidad">
+                <div id="contenedor24" class="clearfix2">
+
+                    <div id="lateral24">
+                        <div class="page-content84">
+                            <h3>Comunidad</h3>
+                        </div>
+
+                        <a class="boton4f5" id="boton4f5" onclick="mostrar65()">
+                            <span class="circle67"><svg xmlns="http://www.w3.org/2000/svg" width="2vw"
+                                    height="2vw" fill="currentColor" class="bi bi-fingerprint"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z" />
+                                    <path
+                                        d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z" />
+                                    <path
+                                        d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
+                                </svg></span>
+                            <span class="title67">Escribir Comentario</span>
+
+                        </a>
+                        <a class="boton4f5t" id="boton4f5t" onclick="mostrar65t()" style="display: none;">
+                            <span class="circle67"><svg xmlns="http://www.w3.org/2000/svg" width="2vw"
+                                    height="2vw" fill="currentColor" class="bi bi-fingerprint"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z" />
+                                    <path
+                                        d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z" />
+                                    <path
+                                        d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
+                                </svg></span>
+                            <span class="title67">Presiona para ocultar</span>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div id="fomr" style="display: none;">
+                    <div class="form-structor">
+                        <div id='search-box'>
+                            <div class="search-form">
+                                <input type="text" name="buscar" id='search-text' placeholder="Buscar..."
+                                    class="search-text">
+                                <button id='search-button' onclick="buscar()">Buscar</a>
+                            </div>
+                        </div>
+                        <div class="signup">
+                            <h2 class="form-title" id="signup">Escribe tu Comentario:</h2>
+                            <div class="form-holder">
+
+                                <input type="text" class="input" name="nombre" id="nombre"
+                                    placeholder="Escribe tu nombre" maxlength="100" required />
+                                <input type="email" class="input" name="email" id="email" placeholder="Email"
+                                    required />
+                                <textarea name="mensaje" id="mensaje" class="input1" for="mensaje"
+                                    placeholder="Mensaje" maxlength="200" required></textarea>
+
+
+                            </div>
+                            <button class="submit-btn" onclick="enviar()">Enviar</button>
+                        </div>
+                        <div class="login slide-up">
+                            <div class="center">
+
+                                <button class="submit-btn1" onclick="reset()">Refrescar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenid">
+                    <!-- Contenedor Principal -->
+                    <div class="comments-container" style="overflow: scroll;height: 40vw;">
+                        <ul id="tasks-container" class="comments-list">
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main class="page-content">
+                <div id="botonAbrir"><a id="abrirAviso" onclick="abrir()"><i id="fas1"
+                            class="fas fa-bell"></i><span class="badge-sonar1"></span></a></div>
+                <div id="barraflotantewcv">
+                    <div id="barraAvisos">
+                        <div id="barraAvisos2">
+                            <a id="cerrarAviso" onclick="cerrar()"><i id="fas1"
+                                    class="fas fa-times-circle"></i></a>
+                        </div>
+                        <div id="barraAvisos1">
+                            <h3 id="tituloAvisos">Avisos</h3>
+                        </div>
+
+                    </div>
+
+                    <div id="listaAvisos">
+
+                    </div>
+
+                </div>
+
+            </main>
+            <span class="ir-arriba"><i class="fas fa-angle-up"></i></span>
+        </main>
+        <div id="pie">©2022 BraillePackage</div>
+    </div>
+    <!-- page-wrapper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+  
+    <script src="js/jquery.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+                apiKey: "AIzaSyB6_WpytoWI78VpXEYeoIOcEcv9qKNfIKo",
+                authDomain: "braillepackage-v2.firebaseapp.com",
+                databaseURL: "https://braillepackage-v2-default-rtdb.firebaseio.com",
+                projectId: "braillepackage-v2",
+                storageBucket: "braillepackage-v2.appspot.com",
+                messagingSenderId: "849155450367",
+                appId: "1:849155450367:web:31f3bd7bcbcdaec641f3ca",
+                measurementId: "G-5K83ZJ4VDX"
+            };
+        firebase.initializeApp(firebaseConfig);</script>
+    <script src="js/Movbarra.js"></script>
+</div>
+</body>
+
+</html>

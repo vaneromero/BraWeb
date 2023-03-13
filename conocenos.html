@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>BraWeb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-theme-chrome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/offline-js/themes/offline-language-spanish.css">
+    <script src="https://cdn.jsdelivr.net/npm/offline-js"></script>
+    <script src="js/check-internet.js"></script>
+    <link rel="icon" href="img/logopa1.png">
+    <link href="estilos/conocenos.css" rel="stylesheet">
+    <link href="estilos/barra.css" rel="stylesheet">
+    <link href="estilos/avisos.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="estilos/comunidad.css" rel="stylesheet">
+    <meta name="viewport"
+    content="widht=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://sweetalert2.github.io/styles/bootstrap4-buttons.css'>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+</head>
+
+<body>
+    <div class="contenedorGeneral">
+    <div class="page-wrapper chiller-theme">
+        <div class="page-wrapper chiller-theme">
+            <a id="show-sidebar" class="fas fa-bars"
+            style="background-color: black; height: 1.6rem; width: 1.8rem; color: rgb(255, 255, 255); font-size: 1.5rem; align-items: center; align-content: center;text-align: center;">
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+
+                    <a href="login.html" id="login" style="text-transform: capitalize;"> <i class="fas fa-users"
+                            style="color: rgb(255, 255, 255);"></i> Iniciar Sesión</a>
+                    <a href="index.html" style="text-transform: capitalize;"> <i class="fas fa-home"
+                            style="color: rgb(255, 255, 255);"></i> Inicio</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/logopa1.png" alt="User picture">
+                    </div>
+                    <div class="user-info" style="margin-top: 12px;">
+                        <span class="user-name" style="color: rgb(255, 255, 255);">
+                            <strong>BraWeb</strong>
+                        </span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>General</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-home"></i>
+                                <span>Inicio</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <span>Descripción</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#page-content5">
+                                            <span>Objetivos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor2">
+                                            <span>Metas</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor3">
+                                            <span>Problematica</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor11">
+                                            <span>Contenido</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#page-content51">
+                                            <span>Aplicaciones</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-history"></i>
+                                <span>Historia</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="historia.html">
+                                            <span>Historia</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="historia.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fab fa-accusoft"></i>
+                                <span>​​Herramientas</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="herramientas.html">
+                                            <span>Descripción</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#contenedor2">
+                                            <span>Traductores</span>
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+                                        <a href="herramientas.html#page-content8">
+                                            <span>Videos</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#page-content563">
+                                            <span>Material de Apoyo</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#tarjetas1">
+                                            <span>Recomendaciones</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="herramientas.html#respu">
+                                            <span>Respuestas de Juegos</span>
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="herramientas.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fab fa-autoprefixer"></i>
+                                <span>Récords</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="records.html">
+                                            <span>Récords</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="records.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>BraApp Tutor</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="tutor.html">
+                                            <span>BraApp Tutor</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="tutor.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>BraApp Alumno</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="alumno.html">
+                                            <span>BraApp Alumno</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="alumno.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>BraApp Administradores</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+
+                                    <li>
+                                        <a href="admin.html">
+                                            <span>BraApp Administradores</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="admin.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-download"></i>
+                                <span>Descargas de Apps</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="tutor.html#desc3">
+                                            <span>BraApp Tutor</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="alumno.html#desc4">
+                                            <span>BraApp Alumno</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-store"></i>
+                                <span>Productos</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="productos.html#oedd">
+                                            <span>Descripción</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="productos.html#prodS">
+                                            <span>Productos Similares</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="productos.html#prodP">
+                                            <span>Productos Braille Package</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="productos.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Educación Especial</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="escuela.html">
+                                            <span>Descripción</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="escuela.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fas fa-user-friends"></i>
+                                <span>¡Conocenos!</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="conocenos.html">
+
+                                            <span>¡Conocenos!</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="conocenos.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a>
+                                <i class="fab fa-teamspeak"></i>
+                                <span>Terminos y Condiciones</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="terminos.html">
+
+                                            <span>Terminos y Condiciones</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terminos.html#contenedor24">
+                                            <span>Comunidad</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li id="fug">
+
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer" id="barra">
+                <a>
+                    <i class="fab fa-facebook"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-twitter"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-youtube"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-instagram"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a>
+                    <i class="fab fa-tiktok"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+            </div>
+        </nav>
+        <main class="page-content">
+    
+            <div class="fondoH">
+                <div class="prev">
+                    <div class="contener">
+    
+                        <div id="uno22">
+                            <div id="imaa">
+                            </div>
+                        </div>
+                        <div id="dos22">
+                            <div id="igon">
+                               </div>
+                            <p class="useName">Información de los colaboradores, creadores y fundadores de Braille Package
+                                antes Mis Primeras Letras en Braille.</p>
+    
+                        </div>
+                        <div id="tres22">
+                            <p class="useID">Equipo:</p>
+                            <a href="conocenos.html#contenedor" class="uso1">▼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="parte2">
+                <br>
+                <div id="contenedor" class="clearfix">
+                    <div id="principal">
+                        <div id="contenedorPr">
+
+                            <div id="contenedorPr2">
+                              <div id="ignv">
+                            
+                                <img  class='imgRedonda' src="img/Fotitoe.png"/>
+                              </div>
+                                <p id="uno1">Ceo de Braille Package</p>
+                                <p id="dos2">Ing. Arely Vanessa Romero Clemente</p>
+                                <div class="contact-area">
+                                    <div class="contact">
+                                      <main>
+                                   
+                                      
+                                        <button>
+                                              <span>Encuentrame En:</span>
+                                  
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="10vw" viewBox="0 0 48 48">
+                                                <g class="nc-icon-wrapper" fill="#444444">
+                                                  <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path>
+                                                </g>
+                                              </svg>
+                                            </button>
+                                        
+                                  
+                                          <div class="title">
+                                            <p>Encuentrame En:</p>
+                                          </div>
+                                    
+                                  
+                                      </main>
+                                  
+                                      <nav>
+                            
+                                            <div id="vane">
+                                                <div class="social">
+                                                    <div class="social">
+
+
+                                                        <a  class="social-share fb" ><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                        <a class="social-share tw" ><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                  
+                                                        <a class="social-share ins"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                  
+                                                        <a class="social-share what" ><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                   
+                                                        <a class="social-share tele"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                                      </svg></a>
+                                                  
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                                
+                                   
+                                    
+                                      </nav>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lateral">
+                        <div id="contenedorPr">
+
+                            <div id="contenedorPr2">
+                     
+                                    <div id="ignv1">
+                                        <img  class='imgRedonda' src="img/Fotitoe.png"/>
+                                      </div>
+                                <p id="uno1">Vicepresidente de Braille Package</p>
+                                <p id="dos2">Ing. Alejandro Limón Tellez</p>
+                                <div class="contact-area">
+                                    <div class="contact">
+                                      <main>
+                                   
+                                      
+                                        <button>
+                                              <span>Encuentrame En:</span>
+                                  
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="10vw" viewBox="0 0 48 48">
+                                                <g class="nc-icon-wrapper" fill="#444444">
+                                                  <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path>
+                                                </g>
+                                              </svg>
+                                            </button>
+                                        
+                                  
+                                          <div class="title">
+                                            <p>Encuentrame En:</p>
+                                          </div>
+                                    
+                                  
+                                      </main>
+                                  
+                                      <nav>
+                            
+                                            <div id="ale">
+                                                <div class="social">
+                                                    <div class="social">
+
+
+                                                        <a  class="social-share fb" ><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                        <a class="social-share tw" ><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                  
+                                                        <a class="social-share ins"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                  
+                                                        <a class="social-share what" ><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                                      </svg></a>
+                                                  
+                                                  
+                                                   
+                                                        <a class="social-share tele"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                                      </svg></a>
+                                                  
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                                
+                                   
+                                    
+                                      </nav>
+                                    </div>
+                                  </div>
+                             
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="parte3">
+
+                <div id="contenedor2" class="clearfix">
+                    <div id="principal2">
+                        <div class="customer-feedback">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-sm-offset-2 col-sm-8">
+                                        <div>
+                                            <h2 class="section-title">Mensaje</h2>
+                                        </div>
+                                    </div><!-- /End col -->
+                                </div><!-- /End row -->
+
+                                <div class="row">
+                                    <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+                                        <div class="owl-carousel feedback-slider">
+
+                                            <!-- slider item -->
+                                            <div class="feedback-slider-item">
+
+                                                <p id="tres3">​​A los alumnos, padres de familia o población en general
+                                                    con o sin discapacidad
+                                                    visual que deseen aprender el lenguaje Braille, donde el sentido del
+                                                    tacto es
+                                                    fundamental para conocer e identificar el conjunto de relieves que
+                                                    componen las ​letras del
+                                                    abecedario; se les presenta un paquete didáctico Braille, esta
+                                                    opción facilita la enseñanza
+                                                    de los profesores y hace sentir más efectivo el apre​ndizaje de los
+                                                    alumnos, ya que utiliza
+                                                    la  forma lúdica como estrategia didáctica que promueve y trae
+                                                    consigo mayor atención e
+                                                    interés de aprendizaje.
+                                                </span>
+                                            </div>
+                                            <!-- /slider item -->
+
+                                            <!-- slider item -->
+                                            <div class="feedback-slider-item">
+                                                <p id="tres3">Cabe destacar que una buena parte de la población muestra
+                                                    la
+                                                    ignorancia que hay respecto a los invidentes, ya que comúnmente las
+                                                    personas que no sufren
+                                                    de esta discapacidad los discriminan, es por ello, que esta opción tiene
+                                                    alta probabilidad de evitar
+                                                    problemas como el racismo, inclusive cabe señalar que beneficia a
+                                                    gran parte de la población
+                                                    al no tener ningún límite de edad o clase económica.
+                                                </span>
+                                            </div>
+                                            <!-- /slider item -->
+                                            <div class="feedback-slider-item">
+                                                <p id="tres3">El
+                                                    impacto de este paquete didáctico es que resolverá el problema del
+                                                    bajo índice de
+                                                    aprendizaje en personas con discapacidad visual, además mejorará el
+                                                    aprendizaje y también se
+                                                    podrán realizar prácticas de manera consecutiva para aprender más
+                                                    rápido el lenguaje
+                                                    braille.
+                                                </span>
+                                            </div>
+                                            <!-- /slider item -->
+
+                                        </div><!-- /End feedback-slider -->
+
+
+
+                                    </div><!-- /End col -->
+                                </div><!-- /End row -->
+                            </div><!-- /End container -->
+                        </div><!-- /End customer-feedback -->
+
+
+                    </div>
+
+                    <div id="lateral2" style="margin-top: 1vw;">
+                        <img src='img/logoo.png' />
+                        <img src='img/logoo.png' />
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="page-content51">
+                <h3>Mas..</h3>
+            </div>
+            <br>
+            <div class="prev1">
+                <div id="contenedorMas">
+                    <ul>
+                        <li><div id="conTarjeta"><img id="imgMas1" src="img/logoo.png" width="80%" height="80%"> <p class="textoTarj"><b>Logo principal:</b> Es el logo que representa la marca general, se encuentra en todas las distribuciónes, con nuestro firme eslogan.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/logo1.png"><p class="textoTarj"><b>Logo General de Aplicaciones Móviles:</b> Representa a BraAppTutor, Alumno y Admin como paquete en las cuales se encuentran todas las versiones.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/WebSinTex1.png"><p class="textoTarj"><b>Logo Principal Pagina Web:</b> Representa a esta pagina.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/logoalumno1.png"><p class="textoTarj"><b>Logo de BraApp Alumno:</b> Con este puedes indentificar la aplicación diseñada para y con el uso del Talkback.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/logoadmin1.png"><p class="textoTarj"><b>Logo de BraAppAdmin:</b> Representa a la aplicación para los administradores o moderadores del mismo.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/tutor1.png"><p class="textoTarj"><b>Logo de BraAppTutor:</b> La marca definida para los tutores.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/icono21.png"><p class="textoTarj"><b>Icono de BraAppTutor:</b> Se encuentra en la Versión 1.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/icono1.png"><p class="textoTarj"><b>Icono de BraAppAdmin:</b> Se encuentra en la Versión 1.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/icono_alumno1.png"><p class="textoTarj"><b>Icono de BraAppAlumno:</b> Se encuentra en la Versión 1.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/iconotutor.png"><p class="textoTarj"><b>Icono de BraAppTutor:</b> Se encuentra en la Versión 1.1.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/icono_alumno.png"><p class="textoTarj"><b>Icono de BraAppAlumno:</b> Se encuentra en la Versión 2.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/iconotutor1.png"><p class="textoTarj"><b>Icono de BraAppTutor:</b> Se encuentra en la Versión 2.</p></div></li>
+                        <li><div id="conTarjeta"><img id="imgMas" src="img/iconoadmin.png"><p class="textoTarj"><b>Icono de BraAppAdmin:</b> Se encuentra en la Versión 2.</p></div></li>
+                    </ul>
+                </div>
+                    <div id="lateral9">
+                        <div id="tres222">
+                            <p class="useID2">Logotipos Braille Package</p>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="comunidad">
+                <div id="contenedor24" class="clearfix2">
+
+                    <div id="lateral24">
+                        <div class="page-content84">
+                            <h3>Comunidad</h3>
+                        </div>
+
+                        <a class="boton4f5" id="boton4f5" onclick="mostrar65()">
+                            <span class="circle67"><svg xmlns="http://www.w3.org/2000/svg" width="2vw"
+                                    height="2vw" fill="currentColor" class="bi bi-fingerprint"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z" />
+                                    <path
+                                        d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z" />
+                                    <path
+                                        d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
+                                </svg></span>
+                            <span class="title67">Escribir Comentario</span>
+
+                        </a>
+                        <a class="boton4f5t" id="boton4f5t" onclick="mostrar65t()" style="display: none;">
+                            <span class="circle67"><svg xmlns="http://www.w3.org/2000/svg" width="2vw"
+                                    height="2vw" fill="currentColor" class="bi bi-fingerprint"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z" />
+                                    <path
+                                        d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                                    <path
+                                        d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z" />
+                                    <path
+                                        d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
+                                </svg></span>
+                            <span class="title67">Presiona para ocultar</span>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div id="fomr" style="display: none;">
+                    <div class="form-structor">
+                        <div id='search-box'>
+                            <div class="search-form">
+                                <input type="text" name="buscar" id='search-text' placeholder="Buscar..."
+                                    class="search-text">
+                                <button id='search-button' onclick="buscar()">Buscar</a>
+                            </div>
+                        </div>
+                        <div class="signup">
+                            <h2 class="form-title" id="signup">Escribe tu Comentario:</h2>
+                            <div class="form-holder">
+
+                                <input type="text" class="input" name="nombre" id="nombre"
+                                    placeholder="Escribe tu nombre" maxlength="100" required />
+                                <input type="email" class="input" name="email" id="email" placeholder="Email"
+                                    required />
+                                <textarea name="mensaje" id="mensaje" class="input1" for="mensaje"
+                                    placeholder="Mensaje" maxlength="200" required></textarea>
+
+
+                            </div>
+                            <button class="submit-btn" onclick="enviar()">Enviar</button>
+                        </div>
+                        <div class="login slide-up">
+                            <div class="center">
+
+                                <button class="submit-btn1" onclick="reset()">Refrescar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenid">
+                    <!-- Contenedor Principal -->
+                    <div class="comments-container" style="overflow: scroll;height: 40vw;">
+                        <ul id="tasks-container" class="comments-list">
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main class="page-content">
+                <div id="botonAbrir"><a id="abrirAviso" onclick="abrir()"><i id="fas1"
+                            class="fas fa-bell"></i><span class="badge-sonar1"></span></a></div>
+                <div id="barraflotantewcv">
+                    <div id="barraAvisos">
+                        <div id="barraAvisos2">
+                            <a id="cerrarAviso" onclick="cerrar()"><i id="fas1"
+                                    class="fas fa-times-circle"></i></a>
+                        </div>
+                        <div id="barraAvisos1">
+                            <h3 id="tituloAvisos">Avisos</h3>
+                        </div>
+
+                    </div>
+
+                    <div id="listaAvisos">
+
+                    </div>
+
+                </div>
+
+            </main>
+            <span class="ir-arriba"><i class="fas fa-angle-up"></i></span>
+        </main>
+        <div id="pie">©2022 BraillePackage</div>
+    </div>
+    <!-- page-wrapper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+
+    <script src="js/jquery.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+                apiKey: "AIzaSyB6_WpytoWI78VpXEYeoIOcEcv9qKNfIKo",
+                authDomain: "braillepackage-v2.firebaseapp.com",
+                databaseURL: "https://braillepackage-v2-default-rtdb.firebaseio.com",
+                projectId: "braillepackage-v2",
+                storageBucket: "braillepackage-v2.appspot.com",
+                messagingSenderId: "849155450367",
+                appId: "1:849155450367:web:31f3bd7bcbcdaec641f3ca",
+                measurementId: "G-5K83ZJ4VDX"
+            };
+        firebase.initializeApp(firebaseConfig);</script>
+            <script src="js/Movbarra.js"></script>
+    <script src="js/conocenos.js"></script>
+</div>
+</body>
+
+</html>

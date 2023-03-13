@@ -1,0 +1,3188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraWeb</title>
+    <link rel="icon" href="img/logopa1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="estilos/principal.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='js/swal2.js'></script>
+    <link rel='stylesheet' href='https://sweetalert2.github.io/styles/bootstrap4-buttons.css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://sweetalert2.github.io/styles/bootstrap4-buttons.css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+    <script>
+        var cadena = "0";
+        session_storage()
+        function session_storage() {
+            convertir(cadena)
+            sessionStorage.setItem("Cadena", valor);
+            var dat = JSON.parse(sessionStorage.getItem("Cadena1"))
+    
+            if (dat == 0) {
+                sessionStorage.setItem("Cadena1", JSON.stringify(5));
+            } else {
+                window.location = "login.html";
+            }
+        }
+        function convertir(obj) {
+            valor = JSON.stringify(obj);
+        }
+    </script>
+    <div class="contenedorBarra" id="contenedorBarra" >
+        <a id="namesitoAd" style="padding-left: 1%; margin-top: 1%; float: left;"></a>
+        <a class="botones" style="float:left; margin-right: 10px;"href="index.html">Braille Package</a>
+        <a class="botones" style="float:left; "onclick="refVIBTN()">Limpiar Vista</a>
+        <div class="contenedor">
+            <ul class="hList">
+                <li>
+                    <a class="menu">
+                        <h2 class="menu-title">Accesos</h2>
+                        <ul class="menu-dropdown">
+                            <li id="ReSoBTN">Redes Sociales</li>
+                            <li id="Links1BTN">Links</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu">
+                        <h2 class="menu-title menu-title_2nd">Productos</h2>
+                        <ul class="menu-dropdown">
+                            <li id="BPPBTN" onclick="BPPBTN()">Productos BP</li>
+                            <li id="PsBTN"onclick="PsBTN()">Productos Similares</li>
+                            <li id="REcoBTN"onclick="REcoBTN()">Recomendaciones</li>
+                            <li id="Cono2BTN"onclick="Cono2BTN()">Conocenos</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a  class="menu">
+                        <h2 class="menu-title menu-title_3rd">Galerías</h2>
+                        <ul class="menu-dropdown">
+                            <li id="GalTBTN" onclick="GalTBTN()">Galería Tutor</li>
+                            <li id="GalAlumBTN" onclick="GalAlumBTN()">Galería Alumno</li>
+                            <li id="GalAdminBTN" onclick="GalAdminBTN()">Galería Admin</li>
+                            <li id="GalEscuBTN" onclick="GalEscuBTN()">Galería Escuelas</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a  class="menu">
+                        <h2 class="menu-title menu-title_4th">Complementos</h2>
+                        <ul class="menu-dropdown">
+                            <li id="vid1BTN" onclick="vid1BTN()">Videos</li>
+                            <li id="doc1BTN" onclick="doc1BTN()">Documentos</li>
+                            <li id="va1BTN" onclick="va1BTN()">Varios</li>
+                            <li id="avid1BTN" onclick="avid1BTN()">Avisos</li>
+                            <li id="comun1BTN" onclick="comun1BTN()">Comunidad</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu">
+                        <h2 class="menu-title menu-title_5th">Más</h2>
+                        <ul class="menu-dropdown">
+                            <li id="log1BTN" onclick="log1BTN()">Logs</li>
+                            <li id="RefCDaBTN" onclick="RefCDaBTN()">Refrescar tablas</li>
+                         
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenido">     
+        <div class="ReSo" id="ReSo" style="display: none;">
+
+
+            <div class="Comunidad1">
+                <div class="cotainer11">
+
+                    <div class="left1">
+
+                        <div id="form">
+
+                            <form id="waterform">
+                                <a type='button' id="Red0" onclick="EliminarR()"><img src="img/stop.png"
+                                        title="Vaciar Todo" style="width:10%;"></a>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Link de R.S.</label>
+                                    <div id="idnevsdtext" width="100%"
+                                        style="margin-bottom:20px; display: none;"></div>
+                                    <textarea name="linkr" id="linkr" style="resize: none;"
+                                        placeholder="Link"></textarea>
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+
+                                    <textarea name="linkr10" id="linkr10" hidden
+                                        placeholder="Titular"></textarea>
+                                    <textarea name="linkr1" id="linkr1" hidden placeholder="Red"></textarea>
+
+
+                                </div>
+                                <div style="display: inline; width: 100%;">
+                                    <a id="actualizarr" type="button" onclick="actualizarr1()"
+                                        style="width: 50px; display: none;"><img src="img/checkbox1.png"
+                                            title="Actualizar" style="width:100%;"></a>
+                                    <a id="limpiarR" type="button" style="width: 50px; margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                         
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Redes Sociales...</b>
+                         </div>
+                        <div style="overflow:scroll;width: 95%; height: 520px;" >
+                     
+                            <table class="table table-striped" >
+
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="60px">Red</th>
+                                        <th id="da">Titular</th>
+                                        <th id="da" width="50px">Link</th>
+                                        <th id="da" width="50px">Actualizar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table17">
+
+                                </tbody>
+                                <tbody id="table15">
+
+                                </tbody>
+                                <tbody id="table16">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Links1" id="Links1" style="display: none;">
+
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+
+                   
+
+                            <form id="waterform">
+
+                                <div style="display: inline; width: 100%;" width="100%">
+                                    <a type='button' id="link0" onclick="EliAL()" style="width: 50px;"><img
+                                            src="img/stop.png" title="Vaciar Todo" style="width:100%;"></a>
+                                    <a id="Component" style="margin-left:20px"></a>
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Link</label>
+                                    <div id="idnevsdtext1" width="100%"
+                                        style="margin-bottom:40px; display: none;"></div>
+
+                                    <textarea name="linkrAL" id="linkrAL" style="resize: none;"
+                                        placeholder="Link"></textarea>
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <textarea name="linkr1AL" hidden id="linkr1AL"
+                                        placeholder="Tipo"></textarea>
+                                    <textarea name="linkr1AL0" hidden id="linkr1AL0"
+                                        placeholder="App"></textarea>
+
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="actualizarrAL" type="button" onclick="actualizarr1AL()"
+                                        style="width: 50px; display: none;"><img src="img/checkbox1.png"
+                                            title="Actualizar" style="width:100%;"></a>
+                                    <a id="limpiarRAL" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Links...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Versión</th>
+                                        <th id="da">App</th>
+                                        <th id="da">Título</th>
+                                        <th id="da" width="50px">Link</th>
+                                        <th id="da" width="50px">Actualizar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table111">
+
+                                </tbody>
+                                <tbody id="table112">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="BPP" id="BPP" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+             
+                            <form id="form12334">
+
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name" >Producto:</label>
+                                    <input name="tituloE4" id="tituloE4" placeholder="Producto"
+                                        maxlength="50"></input>
+                                </div>
+                                <div class="formgroup" id="name-form" style="margin-top:-5px;">
+                                    <label for="name">Descripción:</label>
+                                    <input name="descrE4" id="descrE4" placeholder="Descripción">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrarE4" type="button" style="width: 50px;"><img
+                                            src="img/checkbox.png" title="Agregar Producto"
+                                            style="width:100%;"></a>
+                                    <a id="limpiarE4" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="BPR" onclick="recargar1BP()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="form1234" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Foto:</label>
+                                    <input id="namebox34" disabled></input>
+                                    <label id="upprogress34" style="margin-bottom: 1%;margin-top:.5%"></label>
+                                    <img id="myimg34" style="display: none;">
+
+                                    <div style="display: inline; width: 100%;">
+                                        <a id="selbtn34" type="button" style="width: 50px;"><img
+                                                src="img/call-to-action.png" title="Selecciona Imagen"
+                                                style="width:100%;"></a>
+                                        <a id="atrasPD" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/flecha-hacia-atras.png" title="Atras"
+                                                style="width:100%;"></a>
+
+                                        <a id="upbtn34" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                        <a id="limp34" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                        <a id="desas4" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                            <form id="form123344" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Key:</label>
+                                    <input type="text" style="color:black;" name="key44" id="key44" disabled
+                                        placeholder="Key"></input>
+                                    <label for="name">Producto:</label>
+                                    <input type="text" name="tituloE44" id="tituloE44" maxlength="30"
+                                        placeholder="Producto"></input>
+                                    <label for="name">Descripción:</label>
+                                    <input name="descrE44" id="descrE44" placeholder="Descripción"></input>
+                                    <div style="display: inline; width: 100%;">
+                                        <a id="registrarE44" type="button" style="width: 50px;"><img
+                                                src="img/checkbox1.png" title="Actualizar"
+                                                style="width:100%;"></a>
+
+                                        <a id="limpiarE44" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/tag.png"
+                                                title="Limpiar" style="width:100%;"></a>
+                                        <a id="canceñ34" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/exit.png"
+                                                title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <form id="form3434" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF34" disabled />
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF134" disabled />
+
+                                    <div style="display: inline; width: 100%;">
+                                        <br>
+                                        <a id="eli334" type="button" style="width: 50px;"><img
+                                                src="img/basura.png" title="Confirmar Eliminación"
+                                                style="width:100%;"></a>
+
+                                        <a id="cancel334" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Productos Braille Package...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Título</th>
+                                        <th id="da">Descripción</th>
+                                        <th id="da" width="50px">Editar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table117">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Ps" id="Ps" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form" style="overflow: hidden;">
+        
+                            <form id="form1233456">
+
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name">Producto:</label>
+                                    <input name="tituloE456" id="tituloE456" placeholder="Producto"
+                                        maxlength="50"></input>
+                                    <label for="name">Costo:</label>
+                                    <input type="text" name="costoE456" id="costoE456" placeholder="Costo"
+                                        onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"></input>
+                                    <label for="name" >Sitio:</label>
+                                    <input type="text" name="sitioE456" id="sitioE456"
+                                        placeholder="Sitio"></input>
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Descripción:</label>
+                                    <input name="descrE456" id="descrE456" placeholder="Descripción"></input>
+                                    <label for="name" >Link de Acceso:</label>
+                                    <input type="text" name="linkE456" id="linkE456"
+                                        placeholder="Link de Acceso"></input>
+
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrarE456" type="button" style="width: 50px;"><img
+                                            src="img/checkbox.png" title="Agregar Producto"
+                                            style="width:100%;"></a>
+                                    <a id="limpiarE456" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="RecPS" onclick="recargar1PS()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="form123456" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Foto:</label>
+                                    <input id="namebox3456" disabled></input>
+                                    <label id="upprogress3456" style="margin-bottom: 1%;margin-top:.5%"></label>
+                                    <img id="myimg3456" style="display: none;">
+
+                                    <div style="display: inline; width: 100%;">
+                                        <a id="selbtn3456" type="button" style="width: 50px;"><img
+                                                src="img/call-to-action.png" title="Selecciona Imagen"
+                                                style="width:100%;"></a>
+                                        <a id="atrasdf" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/flecha-hacia-atras.png" title="Atras"
+                                                style="width:100%;"></a>
+                                        <a id="upbtn3456" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                        <a id="limp3456" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                        <a id="desas456" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                            <form id="form12334456" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name" hidden>Key:</label>
+                                    <input type="text" name="key4456" id="key4456" hidden
+                                        placeholder="Key"></input>
+                                    <label for="name">Producto:</label>
+                                    <input type="text" name="tituloE4566" id="tituloE4566" maxlength="50"
+                                        placeholder="Producto"></input>
+                                    <label for="name">Costo:</label>
+                                    <input type="text" name="costoE4566" id="costoE4566" placeholder="Costo">
+                                    <label class="label1" for="">Sitio:</label>
+                                    <input type="text" name="sitioE4566" id="sitioE4566" placeholder="Sitio">
+
+                                    <label for="name">Descripción:</label>
+                                    <input name="descrE4566" id="descrE4566" placeholder="Descripción"></input>
+                                    <label for="name">Link de Acceso:</label>
+                                    <input type="text" name="linkE4566" id="linkE4566"
+                                        placeholder="Link de Acceso">
+
+                                    <div style="display: inline; width: 100%;">
+                                        <a id="registrarE445" type="button" style="width: 50px;"
+                                            onclick="registrarE445()"><img src="img/checkbox1.png"
+                                                title="Actualizar" style="width:100%;"></a>
+
+                                        <a id="limpiarE445" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/tag.png"
+                                                title="Limpiar" style="width:100%;"></a>
+                                        <a id="canceñ345" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/exit.png"
+                                                title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <form id="form343456" style="display: none; ">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF3456" disabled />
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF13456" disabled />
+
+                                    <div style="display: inline; width: 100%;">
+                                        <br>
+                                        <a id="eli33456" type="button" style="width: 50px;"><img
+                                                src="img/basura.png" title="Confirmar Eliminación"
+                                                style="width:100%;"></a>
+
+                                        <a id="cancel33456" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/exit.png"
+                                                title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Productos Similares...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Producto</th>
+                                        <th id="da">Sitio</th>
+                                        <th id="da" width="80px">Costo</th>
+                                        <th id="da" width="50px">Editar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table119">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="REco" id="REco" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+  
+                            <form id="form123345">
+
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name" >Título:</label>
+                                    <input name="tituloE4" name="tituloE45" id="tituloE45" placeholder="Título"
+                                        maxlength="50"></input>
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Descripción:</label>
+                                    <input name="descrE45" id="descrE45" placeholder="Descripción">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrarE45" type="button" style="width: 50px;"><img
+                                            src="img/checkbox.png" title="Agregar Recomendación"
+                                            style="width:100%;"></a>
+                                    <a id="limpiarE45" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="RefresRco" onclick="recargar1Reco()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+
+                            </form>
+                            <form id="form12345" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Foto:</label>
+                                    <input id="namebox345" disabled></input>
+                                    <label id="upprogress345" style="margin-bottom: 1%;margin-top:.5%"></label>
+                                    <img id="myimg345" style="display: none;">
+
+
+                                    <div style="display: inline; width: 100%;">
+                                        <a id="selbtn345" type="button" style="width: 50px;"><img
+                                                src="img/call-to-action.png" title="Selecciona Imagen"
+                                                style="width:100%;"></a>
+                                        <a id="atrasREco" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/flecha-hacia-atras.png" title="Atras"
+                                                style="width:100%;"></a>
+
+                                        <a id="upbtn345" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                        <a id="limp345" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                        <a id="desas45" type="button"
+                                            style="width: 50px;display: none;margin-left:20px;"><img
+                                                src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+                            <form id="form1233445" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Key:</label>
+                                    <input type="text" name="key445" id="key445" disabled
+                                        placeholder="Key"></input>
+                                    <label for="name">Recomendación:</label>
+                                    <input type="text" name="tituloE445" id="tituloE445"
+                                        placeholder="Producto" maxlength="50"></input>
+                                    <label for="name">Descripción:</label>
+                                    <input name="descrE445" id="descrE445" placeholder="Descripción"></input>
+
+
+
+                                    <div style="display: inline; width: 100%;">
+                                        <a id="registrarE44554" type="button" style="width: 50px;"
+                                            onclick="registrarE44554()"><img src="img/checkbox1.png"
+                                                title="Actualizar" style="width:100%;"></a>
+
+                                        <a id="limpiarE4458" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/tag.png"
+                                                title="Limpiar" style="width:100%;"></a>
+                                        <a id="canceñ345" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/exit.png"
+                                                title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <form id="form34345" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF345" disabled />
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF1345" disabled />
+                                    <div style="display: inline; width: 100%;">
+                                        <br>
+                                        <a id="eli33465" type="button" style="width: 50px;"><img
+                                                src="img/basura.png" title="Confirmar Eliminación"
+                                                style="width:100%;"></a>
+
+                                        <a id="cancel3345" type="button"
+                                            style="width: 50px;margin-left:20px;"><img src="img/exit.png"
+                                                title="Cancelar" style="width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Recomendaciones</b>
+                         </div>
+                        <div style="overflow:scroll;width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Título</th>
+                                        <th id="da">Descripción</th>
+                                        <th id="da" width="50px">Editar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table118">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Cono2" id="Cono2" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+
+                        <div id="form">
+
+              
+                            <form id="selecUs">
+                                <div style="margin-bottom: 3%; width:100%; display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;">
+                                    <a id="Recarfdvg" type="button" style="width: 70px; display:block;"><img
+                                            src="img/recargar.png" title="Refrescar Tabla"
+                                            style="width:100%;"></a>
+                                </div>
+
+                                <a id="ale1" title="ale1" class="btn" onclick="vi(title)"
+                                    style=" display:block;border: none; outline:none;">
+                                    Alejandro
+                                    <img src="img/hombf.png" width="150px"></img>
+                                </a>
+                                <br>
+                                <a id="van1" class="btn" onclick="vi1()"
+                                    style="display:block; border: none;outline:none;">
+                                    Arely Vanessa
+                                    <img src="img/mujed.png" width="150px"></img>
+                                </a>
+                            </form>
+                            <form id="label391" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Datos llenos, primero elimine el dato.</label>
+                                    <a onclick="restaurar1()" type="button"
+                                        style="width: 50px;margin-top: 5%;"><img
+                                            src="img/flecha-hacia-atras.png" title="Atras"
+                                            style="width:100%;"></a>
+
+                                </div>
+
+                            </form>
+                            <form id="Vane" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Foto:</label>
+                                    <input id="namebox956" disabled></input>
+                                    <label id="upprogress956"></label>
+                                    <img id="myimg956" style="display: none;"></img>
+                                </div>
+                                <div style="display: inline; width: 100%; ">
+                                    <a id="selbtn956" type="button" style="width: 50px;margin-top: 20px;"><img
+                                            src="img/call-to-action.png" title="Selecciona Imagen"
+                                            style="width:100%;"></a>
+                                    <a id="upbtn956" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;"><img
+                                            src="img/checkbox.png" title="Agregar Foto" style="width:100%;"></a>
+                                    <a id="limp956" type="button"
+                                        style="width: 50px;margin-left:20px;margin-top: 20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                            <form id="form349" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF9" disabled></input>
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF19" disabled></input>
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="eli39" type="button" style="width: 50px;"><img src="img/basura.png"
+                                            title="Confirmar Eliminación" style="width:100%;"></a>
+
+                                    <a id="cancel39" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="lale" style="display: none;">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Foto:</label>
+                                    <input type="text" id="namebox91" disabled></input>
+                                    <label id="upprogress91"></label>
+                                    <img id="myimg91" style="display: none;"></img>
+                                </div>
+
+                                <div style="display: inline; width: 100%; ">
+                                    <a id="selbtn91" type="button" style="width: 50px;margin-top: 20px;"><img
+                                            src="img/call-to-action.png" title="Selecciona Imagen"
+                                            style="width:100%;"></a>
+                                    <a id="upbtn91" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;"><img
+                                            src="img/checkbox.png" title="Agregar Foto" style="width:100%;"></a>
+                                    <a id="limp91" type="button"
+                                        style="width: 50px;margin-left:20px;margin-top: 20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                            <form id="form3491" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF912" disabled></input>
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF1912" disabled></input>
+
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="eli391" type="button" style="width: 50px;"><img src="img/basura.png"
+                                            title="Confirmar Eliminación" style="width:100%;"></a>
+
+                                    <a id="cancel391" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Conocenos...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da"width="50px">Imagen</th>
+                                        <th id="da">Nombre</th>
+                                        <th id="da">Nombre de Foto</th>
+                                        <th id="da" width="50px">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table1139">
+
+
+                                </tbody>
+                                <tbody id="table11391">
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="GalT" id="GalT" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+                 
+                            <form id="form12">
+                                <div class="formgroup" id="name-form">
+                                    <label class="label3" for="name" id="label3"
+                                        style="margin-top: 20px;">Foto:</label>
+                                    <input type="text" id="namebox" disabled />
+                                    <label id="upprogress"></label>
+                                    <img id="myimg" style="display: none;">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="selbtn" type="button" style="width: 50px; margin-top: 20px;"><img
+                                            src="img/call-to-action.png" title="Selecciona Imagen"
+                                            style="width:100%;"></a>
+                                    <a id="upbtn" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;margin-left:20px;"><img
+                                            src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                    <a id="limp" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="RecargTu" onclick="galT()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="form34" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF" disabled />
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF1" disabled />
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="eli3" type="button" style="width: 50px;"><img src="img/basura.png"
+                                            title="Confirmar Eliminación" style="width:100%;"></a>
+                                    <a id="cancel3" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Galeria Tutor...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Nombre</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table113">
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="GalAlum" id="GalAlum" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+                      
+                            <form id="form121">
+                                <div class="formgroup" id="name-form">
+                                    <label class="label31" for="name" id="label313"
+                                        style="margin-top: 20px;">Foto:</label>
+                                    <input type="text" id="namebox1" disabled />
+                                    <label id="upprogress1"></label>
+                                    <img id="myimg1" style="display: none;">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="selbtn1" type="button" style="width: 50px; margin-top: 20px;"><img
+                                            src="img/call-to-action.png" title="Selecciona Imagen"
+                                            style="width:100%;"></a>
+                                    <a id="upbtn1" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;margin-left:20px;"><img
+                                            src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                    <a id="limp1" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="Refhalu" onclick=" galAlum()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="form341" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF111" disabled />
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF11" disabled />
+                                </div>
+                                <div style="display: inline; width: 100%;">
+                                    <a id="eli31" type="button" style="width: 50px;"><img src="img/basura.png"
+                                            title="Confirmar Eliminación" style="width:100%;"></a>
+                                    <a id="cancel31" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Galeria Alumno...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Nombre</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table114">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="GalAdmin" id="GalAdmin" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+                        
+                            <form id="form1212">
+                                <div class="formgroup" id="name-form">
+                                    <label class="label312" for="name" id="label312"
+                                        style="margin-top: 20px;">Foto:</label>
+                                    <input type="text" id="namebox12" disabled />
+                                    <label id="upprogress12"></label>
+                                    <img id="myimg12" style="display: none;">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="selbtn12" type="button" style="width: 50px; margin-top: 20px;"><img
+                                            src="img/call-to-action.png" title="Selecciona Imagen"
+                                            style="width:100%;"></a>
+                                    <a id="upbtn12" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;margin-left:20px;"><img
+                                            src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                    <a id="limp12" type="button"
+                                        style="width: 50px;display: none;margin-top: 20px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="RefhADm" onclick="galAdmin()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="form3412" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="idF1112" disabled />
+                                    <label for="name">Key:</label>
+                                    <input type="text" id="idF112" disabled />
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="eli312" type="button" style="width: 50px;"><img src="img/basura.png"
+                                            title="Confirmar Eliminación" style="width:100%;"></a>
+                                    <a id="cancel312" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Galeria Administrador.</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Nombre</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table115">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="GalEscu" id="GalEscu" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+                  
+                            <form id="form1233">
+                                <div class="formgroup" id="name-form">
+                                    <label class="label1" for="name" id="label71">Título</label>
+                                    <input type="text" name="tituloE" id="tituloE" placeholder="Titulo"
+                                        maxlength="30" required>
+                                </div>
+                                <div class="formgroup" id="name-form" >
+                                    <label class="label1" for="name">Descripción</label>
+                                    <input type="text" name="descrE" id="descrE" placeholder="Descripción"
+                                        required>
+                                </div>
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrarE" type="button" style="width: 50px;"><img
+                                            src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                    <a id="limpiarE" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="Refhyrf" onclick="recargarEscu()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                            <form id="form123" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name" >Foto</label>
+
+                                    <input type="text" id="namebox3" disabled />
+                                    <label id="upprogress3"></label>
+                                    <img id="myimg3" style="display: none;">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="selbtn3" type="button" style="width: 50px;"><img
+                                            src="img/call-to-action.png" title="Selecciona Imagen"
+                                            style="width:100%;"></a>
+                                    <a id="atrasdffgh" type="button"
+                                        style="width: 50px;display: none;margin-left:20px;"><img
+                                            src="img/flecha-hacia-atras.png" title="Atras"
+                                            style="width:100%;"></a>
+
+                                    <a id="upbtn3" type="button"
+                                        style="width: 50px;display: none;margin-left:20px;"><img
+                                            src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                    <a id="limp3" type="button"
+                                        style="width: 50px;display: none;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="desas" type="button"
+                                        style="width: 50px;display: none;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                </div>
+
+
+                            </form>
+                            <form id="form343" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="idF3" disabled />
+                                    <label for="name">Key</label>
+                                    <input type="text" id="idF13" disabled />
+                                </div>
+
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="eli33" type="button" style="width: 50px;"><img src="img/basura.png"
+                                            title="Confirmar Eliminación" style="width:100%;"></a>
+
+                                    <a id="cancel33" type="button"
+                                        style="width: 50px;display: none;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                </div>
+
+                            </form>
+                            <form id="form123357" style="display: none;">
+                                <div class="formgroup" id="name-form">
+                                    <label class="label1" for="name">Key</label>
+                                    <input type="text" name="keyE" id="keyE" disabled placeholder="Key">
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label class="label1" for="name">Título</label>
+                                    <input type="text" name="tituloEE" maxlength="30" id="tituloEE"
+                                        placeholder="Título">
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label class="label1" for="name">Descripción</label>
+                                    <input type="text" name="descrEE" id="descrEE" placeholder="Descripción">
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrarEE" type="button" style="width: 50px;"><img
+                                            src="img/checkbox1.png" title="Actualizar" style="width:100%;"></a>
+
+                                    <a id="limpiarEE" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="canceñ34E" type="button" style="width: 50px;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Galeria Escuelas...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Imagen</th>
+                                        <th id="da">Título</th>
+                                        <th id="da">Descripción</th>
+                                        <th id="da" width="50px">Editar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table116">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vid1" id="vid1" style="display: none;">
+
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+
+
+                            <form id="waterform" >
+                                <div style="color: black;margin: 20px; border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                                   <h2 style="color: rgb(39, 11, 105);font-weight: bold;margin-top: 4%;margin-bottom: 4%;" >Links de videos unicos:</h3>
+                                    "https://www.youtube.com/embed/<b>"3rZIm55xOkU"</b><br >
+                                    <b style="font-weight: bold;"> Solo colocar la parte final del link:</b> <br ><b>"3rZIm55xOkU"</b>
+                                    <h2 style="color: rgb(39, 11, 105);font-weight: bold;margin-top: 4%;margin-bottom: 4%;">Links de videos con playlist:</h3>
+                                    "https://www.youtube.com/embed/videoseries?<b>list=PLMePfPb0PU8JZQ0LddoHX-DdeD_U0pa8_"</b><br >
+                                  <b style="font-weight: bold;"> Solo colocar la parte final del link:</b><br>
+                                    <b >"list=PLMePfPb0PU8JZQ0LddoHX-DdeD_U0pa8_"</b></div>
+
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Video</label>
+                                    <input name="video" id="video" disabled style="color: black;margin: 20px auto;"
+                                        placeholder="Video"></input>
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">URL</label>
+                                    <input name="links7" id="links7" placeholder="Links"style="margin: 20px auto;"  ></input>
+
+                                </div>
+
+                                          <div class="formgroup" id="name-form"style="margin: auto;">
+                                    <input name="linksq" id="linksq" hidden></input>
+
+                                </div>
+                                <div style="display: inline; width: 100%; ">
+                                    <a type='button' onclick="Eliminar3()"><img src="img/stop.png"
+                                        title="Vaciar Todo" style="width: 50px;"></a>
+                                    <a id="actualizar" type="button" style="width: 50px; display: none;margin-left:20px;"><img
+                                            src="img/checkbox1.png" title="Actualizar" style="width:100%;"></a>
+                                    <a id="limpiar3" type="button" style="width: 50px; margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="idkd" type="button" style="width: 50px;margin-left:20px;display: none;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+                                            
+                              
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Videos...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 100%; height: 520px;">
+
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Video</th>
+                                        <th id="da">Link</th>
+                                        <th id="da" width="50px">Actualizar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table13">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doc1" id="doc1" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+
+                    <div class="left1">
+
+                        <div id="form">
+                       
+
+
+                            <form id="waterform">
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Título</label>
+                                    <input name="tituloD" id="tituloD" maxlength="100"
+                                        placeholder="Título"></input>
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Archivo Docx</label>
+                                    <input name="docx" id="docx" placeholder="Docx"></input>
+
+                                </div>
+                                
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Archivo PDF</label>
+                                    <input name="pdf" id="pdf" placeholder="Pdf"></input>
+
+                                </div>
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrarD" type="button" style="width: 50px; "><img
+                                            src="img/checkbox.png" title="Guardar" style="width:100%;"></a>
+                                    <a id="limpiarD" type="button" style="width: 50px; margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Documentos...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Fecha</th>
+                                        <th id="da">Título</th>
+
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table14">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="va1" id="va1" style="display: none;">
+
+
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+
+
+                        <div id="form">
+                      
+
+                            <form id="waterform">
+                                <a type='button' onclick="EliminarVar()"><img src="img/stop.png"
+                                        title="Vaciar Todo" style="width:10%;"></a>
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Link de Varios</label>
+                                    <div id="idnevsdtext2" width="100%"
+                                        style="margin-bottom:20px; display: none;"></div>
+                                    <textarea name="linkrV" id="linkrV" style="resize: none;"
+                                        placeholder="Link"></textarea>
+
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <textarea name="linkr1V" id="linkr1V" hidden
+                                        placeholder="accesp"></textarea>
+
+                                </div>
+                                <div style="display: inline; width: 100%;">
+                                    <a id="actualizarrV" onclick="actualizarr1V()" type="button"
+                                        style="width: 50px; display: none;"><img src="img/checkbox1.png"
+                                            title="Actualizar" style="width:100%;"></a>
+                                    <a id="limpiarRV" type="button" style="width: 50px; margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="Cancelf" type="button"
+                                        style="width: 50px;display: none;margin-left:20px;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Varios...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da" width="50px">Red</th>
+                                        <th id="da">Título</th>
+                                        <th id="da" width="50px">Link</th>
+                                        <th id="da" width="50px">Actualizar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table18">
+
+                                </tbody>
+                                <tbody id="table19">
+
+                                </tbody>
+                                <tbody id="table110">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="avid1" id="avid1" style="display: none;">
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+
+                      
+
+                            <form id="waterform">
+                                <a type='button' onclick="EliminarAv()"><img src="img/stop.png"
+                                        title="Vaciar Todo" style="width:10%;"></a>
+
+                                <div class="formgroup" id="name-form">
+                                    <input name="fechaa" style="display: none;" disabled id="fechaa"></input>
+                                    <input name="idi" style="display: none;" disabled id="idi"></input>
+                                </div>
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Título</label>
+                                    <input name="titulo" id="titulo" placeholder="Título"></input>
+
+                                </div>
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name" style="margin-top: 5px;">Contenido</label>
+                                    <textarea type="textarea" name="contenido" style="height:150px;" rows="4"
+                                        id="contenido" placeholder="Contenido" maxlength="200"></textarea>
+
+
+                                </div>
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="agreA" type="button" style="width: 50px;"><img src="img/checkbox.png"
+                                            title="Guardar" style="width:100%;"></a>
+                                    <a id="agreA1" type="button"
+                                        style="width: 50px; margin-left:20px; display: none;"><img
+                                            src="img/checkbox1.png" title="Actualizar" style="width:100%;"></a>
+
+                                    <a id="limpiar143" type="button" style="width: 50px; margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="Refh" onclick="ReAvi()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar" style="width:100%;"></a>
+                                    <a id="idkddsf" type="button"
+                                        style="width: 50px;margin-left:20px; display:none ;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Avisos...</b>
+                         </div>
+                        <div style="overflow:scroll; width: 95%; height: 520px;">
+
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Fecha</th>
+                                        <th id="da">Título</th>
+                                        <th id="da">Contenido</th>
+
+                                        <th id="da">Actualizar</th>
+                                        <th id="da">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table12">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comun1" id="comun1" style="display: none;">
+
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1">
+                        <div id="form">
+
+
+                            <form id="waterform">
+                                <a type='button' id="Eliminar1"><img src="img/stop.png" title="Vaciar Todo"
+                                        style="width:10%;"></a>
+
+                                <div class="formgroup" id="name-form">
+                                    <input name="id" id="id" hidden placeholder="id">
+                                    <label for="name">Fecha:</label>
+                                    <input name="fecha" id="fecha" disabled placeholder="Fecha"
+                                        style="color:black;">
+                                </div>
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name">Usuario:</label>
+                                    <input name="usuario" id="usuario" disabled placeholder="Usuario"
+                                        style="color:black;"></input>
+                                </div>
+
+                                <div class="formgroup" id="name-form">
+
+                                    <label for="name">Pregunta:</label>
+                                    <input name="pregunta" id="pregunta" style="color:black;" disabled
+                                        placeholder="Pregunta">
+                                </div>
+
+                                <div class="formgroup" id="name-form">
+                                    <label for="name">Respuesta:</label>
+                                    <input name="respuesta" id="respuesta" placeholder="Respuesta"
+                                        maxlength="200">
+                                </div>
+
+
+                                <div style="display: inline; width: 100%;">
+                                    <a id="registrar1" type="button" style="width: 50px; display: none;"><img
+                                            src="img/checkbox1.png" title="Actualizar" style="width:100%;"></a>
+
+                                    <a id="limpiar" type="button" style="width: 50px; margin-left:20px;"><img
+                                            src="img/tag.png" title="Limpiar" style="width:100%;"></a>
+                                    <a id="Refh" onclick="carg2()" type="button"
+                                        style="width: 50px;margin-left:20px;"><img src="img/recargar.png"
+                                            title="Refrescar Tabla" style="width:100%;"></a>
+                                    <a id="iffdddsf" type="button"
+                                        style="width: 50px;margin-left:20px; display:none ;"><img
+                                            src="img/exit.png" title="Cancelar" style="width:100%;"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right1">
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Comunidad...</b>
+                         </div>
+                        <div style="overflow:scroll;width: 95%; height: 520px;">
+
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Fecha</th>
+                                        <th id="da">Usuario</th>
+                                        <th id="da">Pregunta</th>
+                                        <th id="da">Respuesta</th>
+
+                                        <th id="da" width="50px">Actualizar</th>
+                                        <th id="da" width="50px">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="table11">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="log1" id="log1" style="display: none;">
+
+            <div class="Comunidad1">
+                <div class="cotainer11">
+                    <div class="left1" style="display: block;margin-left: 10%">
+                        <div class="espacio" style="margin-top: 2%;">
+                            <label for="name" class="label3">Buscar Por Código:</label>
+                            <input name="buscar6778" id="buscar6778" placeholder="Buscar..."
+                                onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
+                                maxlength="4">
+
+                            <a type="button" style="width: 50px; margin-left:20px;"><img src="img/lupa.png"
+                                    title="Buscar" onclick="buscar13()" style="width:100%;"></a>
+                            <a type="button" style="width: 50px; margin-left:20px;"><img src="img/lupa1.png"
+                                    onclick="carga()" title="Recargar" style="width:100%;"></a>
+                            <a type='button' id="Sussd" style="width: 50px; margin-left:20px;"
+                                onclick="exportTableToExcel('Comd', 'BraillePackage del '+now)"><img
+                                    src="img/stop.png" title="Vaciar Todo" style="width:100%;"></a>
+                        </div>
+                        <div class="espacio1">
+                            <label for="name" class="label3">Guía:</label>
+                            <div id="Contiene" style="overflow:scroll; height: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right1" >
+                        <div style="color: black; margin-bottom: 2%;border-radius: 25px;  background-color: rgba(250, 214, 171, 0.514);">
+                  
+                            <b style="font-weight: bold; font-size:2.5vw">Logs...</b>
+                         </div>
+                        <div style="overflow:scroll;  width: 100%; height: 500px;">
+                            <script>
+                                var today = new Date();
+
+                                // obtener la fecha y la hora
+                                var now = today.toLocaleString();
+                                'Respaldo del ' + now
+                            </script>
+
+
+                            <table class="table table-striped" id="Comd">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th id="da">Código</th>
+                                        <th id="da">Fecha</th>
+                                        <th id="da">Acción</th>
+                                        <th id="da2" width="60px">Lugar</th>
+                                        <th id="da1" style="display: none;" width="60px">Lugar2</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table120">
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="page-content">
+        <div id="botonAbrir"><a id="abrirAviso" ><i id="fas1" class="fas fa-music"></i><span
+                    class="badge-sonar1"></span></a></div>
+        <div id="barraflotantewcv">
+            <div id="barraAvisos">
+                <div id="barraAvisos2">
+                    <a id="cerrarAviso" ><i id="fas1" class="fas fa-times-circle"></i></a>
+                </div>
+                <div id="barraAvisos1">
+                    <h3 id="tituloAvisos">Musica</h3>
+                </div>
+
+            </div>
+
+            <div id="listaAvisos"
+                style="position: absolute; width: 100%; margin-top: 20px; overflow:scroll; height: 400px; border-radius: 10px; ">
+                <iframe style="border-radius:12px;"
+                    src="https://open.spotify.com/embed/playlist/62LDEXobCLiahfQmCZHK0R?utm_source=generator"
+                    width="100%" height="380" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </main>
+    <!-- FIREBASE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+                apiKey: "AIzaSyB6_WpytoWI78VpXEYeoIOcEcv9qKNfIKo",
+                authDomain: "braillepackage-v2.firebaseapp.com",
+                databaseURL: "https://braillepackage-v2-default-rtdb.firebaseio.com",
+                projectId: "braillepackage-v2",
+                storageBucket: "braillepackage-v2.appspot.com",
+                messagingSenderId: "849155450367",
+                appId: "1:849155450367:web:31f3bd7bcbcdaec641f3ca",
+                measurementId: "G-5K83ZJ4VDX"
+            };
+        firebase.initializeApp(firebaseConfig);</script>
+    <script src="js/principal.js"></script>
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL, deleteObject }
+            from "https://www.gstatic.com/firebasejs/9.9.1/firebase-storage.js"
+        //-------------------------------------Propio-----------------------------//
+
+        // ------- variables y referencias--------------//
+        var files34 = [];//Se Ocupa
+        var reader34 = new FileReader();//Se Ocupa        
+        var tituloE4 = document.getElementById('tituloE4');//Se Ocupa
+        var descrE4 = document.getElementById('descrE4');//Se Ocupa
+        var desas4 = document.getElementById('desas4');//Se Ocupa
+        var namebox34 = document.getElementById('namebox34');//Se Ocupa
+        var myimg34 = document.getElementById('myimg34');//Se Ocupa
+        var proglab34 = document.getElementById('upprogress34');//Se Ocupa
+        var SelBtn34 = document.getElementById('selbtn34');//Se Ocupa
+        var UpBtn34 = document.getElementById('upbtn34');//Se Ocupa
+        var limp34 = document.getElementById('limp34');//Se Ocupa
+        var input34 = document.createElement('input');//Se Ocupa
+        input34.type = 'file';//Se Ocupa
+        var eli334 = document.getElementById('eli334');//Se Ocupa
+        var sus434 = document.getElementById('sus434');//Se Ocupa  
+        var cancel334 = document.getElementById('cancel334');//Se Ocupa
+        input34.onchange = e => {
+            console.log("datoti");
+            files34 = e.target.files;
+
+            var extention34 = GetFileExt34(files34[0]);
+            var name34 = GetFileName34(files34[0]);
+
+            namebox34.value = name34 + extention34;
+
+            reader34.readAsDataURL(files34[0]);
+
+        }
+        reader34.onload = function () {
+            myimg34.src = reader34.result;
+        }
+        // ------- Selection--------------//
+        SelBtn34.onclick = function () {
+            input34.click();
+            document.getElementById('myimg34').style.display = 'inline';
+            document.getElementById('selbtn34').style.display = 'none';
+            document.getElementById('upbtn34').style.display = 'inline';
+            document.getElementById('limp34').style.display = 'inline';
+            document.getElementById('atrasPD').style.display = 'none';
+        }
+        function GetFileExt34(file) {
+            var temp34 = file.name.split('.');
+            var ext34 = temp34.slice((temp34.length - 1), (temp34.length));
+            return '.' + ext34[0];
+        }
+        function GetFileName34(file) {
+            var temp34 = file.name.split('.');
+            var fname34 = temp34.slice(0, -1).join('.');
+            return fname34;
+        }
+        limp34.onclick = function () {
+            namebox34.value = "";
+            proglab34.value = "";
+            document.getElementById('myimg34').style.display = 'none';
+            document.getElementById('selbtn34').style.display = 'inline';
+            document.getElementById('upbtn34').style.display = 'none';
+            document.getElementById('limp34').style.display = 'none';
+            
+            $('#myimg34').attr("src", 'img/logopa1.png');
+            document.getElementById('atrasPD').style.display = 'inline';
+        }
+        desas4.onclick = function () {
+
+            namebox34.value = "";
+
+            proglab34.value = "";
+            document.getElementById('myimg34').style.display = 'none';
+            document.getElementById('selbtn34').style.display = 'inline';
+            document.getElementById('upbtn34').style.display = 'none';
+            document.getElementById('limp34').style.display = 'none';
+            $('#myimg34').attr("src", 'img/logopa1.png');
+            document.getElementById("tituloE4").value = "";
+            document.getElementById("descrE4").value = "";
+            document.getElementById('form1234').style.display = 'none';
+            document.getElementById("tituloE4").disabled = false;
+            document.getElementById("descrE4").disabled = false;
+            document.getElementById('BPR').style.display = 'inline';
+            document.getElementById('limpiarE4').style.display = 'inline';
+            document.getElementById('registrarE4').style.display = 'inline';
+        }
+
+        cancel334.onclick = function () {
+            document.getElementById('form12334').style.display = 'none';
+            document.getElementById('form1234').style.display = 'none';
+            document.getElementById('form3434').style.display = 'none';
+            document.getElementById('form12334').style.display = 'block';
+        }
+        eli334.onclick = function () {
+            const storage34 = getStorage();
+            var name34 = document.getElementById('idF34').value;
+            var name134 = document.getElementById('idF134').value;
+            deleteObject(
+                sRef(storage34, `/Propio/` + name34)
+            ).then(() => {
+                firebase.database().ref('/Propio/' + name134).remove();
+                document.getElementById('eli334').style.display = 'none';
+                document.getElementById('limp34').style.display = 'none';
+                document.getElementById('cancel334').style.display = 'none';
+                recargar1BP();
+                document.getElementById('form12334').style.display = 'none';
+                document.getElementById('form1234').style.display = 'none';
+                document.getElementById('form3434').style.display = 'none';
+                document.getElementById('form12334').style.display = 'block';
+            });
+        }
+
+        // ------- Proceso de subida--------------//
+        async function UploadProcess34() {
+
+            var ImgToUpload34 = files34[0];
+
+            var ImgName34 = namebox34.value;
+
+            const metaData34 = {
+                contentType: ImgToUpload34.type
+            }
+
+            const storage34 = getStorage();
+
+            const stroageRef34 = sRef(storage34, "/Propio/" + ImgName34);
+
+            const UploadTask34 = uploadBytesResumable(stroageRef34, ImgToUpload34, metaData34);
+            document.getElementById('upprogress34').style.display = 'block';
+            UploadTask34.on('state-changed', (snapshot) => {
+                var progess34 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab34.innerHTML = "Subiendo " + progess34.toFixed() + "%";
+                document.getElementById('selbtn34').style.display = 'none';
+                document.getElementById('upbtn34').style.display = 'none';
+                document.getElementById('limp34').style.display = 'none';
+                document.getElementById('desas4').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask34.snapshot.ref).then((downloadURL) => {
+                        firebase.database().ref('Propio/').push()
+                            .set({
+                                'url': downloadURL,
+                                'nombresito': namebox34.value,
+                                'nombre': tituloE4.value,
+                                'descripción': descrE4.value,
+                            })
+                        namebox34.value = "";
+                        proglab34.value = "";
+                        document.getElementById('myimg34').style.display = 'none';
+                        document.getElementById('selbtn34').style.display = 'inline';
+                        document.getElementById('upbtn34').style.display = 'none';
+                        document.getElementById('limp34').style.display = 'none';
+                        $('#myimg34').attr("src", 'img/logopa1.png');
+                        document.getElementById('upprogress34').style.display = 'none';
+                        document.getElementById("tituloE4").value = "";
+                        document.getElementById("descrE4").value = "";
+                        document.getElementById('form1234').style.display = 'none';
+                        document.getElementById("tituloE4").disabled = false;
+                        document.getElementById("descrE4").disabled = false;
+                        document.getElementById('limpiarE4').style.display = 'inline';
+                        document.getElementById('upprogress34').style.display = 'none';
+                        document.getElementById('registrarE4').style.display = 'inline';
+                        document.getElementById('BPR').style.display = 'inline';
+                        recargar1BP();
+
+                    });
+
+                }
+
+            );
+        }
+        UpBtn34.onclick = UploadProcess34;
+        //-------------------------------------Productos Similares-----------------------------//
+        // ------- variables y referencias--------------//
+        var files3456 = [];
+        var reader3456 = new FileReader();
+        var tituloE456 = document.getElementById('tituloE456');
+        var descrE456 = document.getElementById('descrE456');
+        var sitioE456 = document.getElementById('sitioE456');
+        var costoE456 = document.getElementById('costoE456');
+        var linkE456 = document.getElementById('linkE456');
+        var desas456 = document.getElementById('desas456');
+        var namebox3456 = document.getElementById('namebox3456');
+        var myimg3456 = document.getElementById('myimg3456');
+        var proglab3456 = document.getElementById('upprogress3456');
+        var SelBtn3456 = document.getElementById('selbtn3456');
+        var UpBtn3456 = document.getElementById('upbtn3456');
+        var limp3456 = document.getElementById('limp3456');
+        var input3456 = document.createElement('input');
+        input3456.type = 'file';
+        var eli33465 = document.getElementById('eli33465');
+        var cancel33456 = document.getElementById('cancel33456');
+        input3456.onchange = e => {
+            files3456 = e.target.files;
+
+            var extention3456 = GetFileExt3456(files3456[0]);
+            var name3456 = GetFileName3456(files3456[0]);
+
+            namebox3456.value = name3456 + extention3456;
+
+            reader3456.readAsDataURL(files3456[0]);
+        }
+        reader3456.onload = function () {
+            myimg3456.src = reader3456.result;
+        }
+        SelBtn3456.onclick = function () {
+            input3456.click();
+            document.getElementById('myimg3456').style.display = 'inline';
+            document.getElementById('selbtn3456').style.display = 'none';
+            document.getElementById('upbtn3456').style.display = 'inline';
+            document.getElementById('limp3456').style.display = 'inline';
+            document.getElementById('atrasdf').style.display = 'none';
+
+        }
+        function GetFileExt3456(file) {
+            var temp3456 = file.name.split('.');
+            var ext3456 = temp3456.slice((temp3456.length - 1), (temp3456.length));
+            return '.' + ext3456[0];
+        }
+        function GetFileName3456(file) {
+            var temp3456 = file.name.split('.');
+            var fname3456 = temp3456.slice(0, -1).join('.');
+            return fname3456;
+        }
+        limp3456.onclick = function () {
+            namebox3456.value = "";
+            proglab3456.value = "";
+            document.getElementById('myimg3456').style.display = 'none';
+            document.getElementById('selbtn3456').style.display = 'inline';
+            document.getElementById('upbtn3456').style.display = 'none';
+            document.getElementById('limp3456').style.display = 'none';
+            document.getElementById('atrasdf').style.display = 'inline';
+            $('#myimg3456').attr("src", 'img/logopa1.png');
+        }
+        desas456.onclick = function () {
+            namebox3456.value = "";
+            proglab3456.value = "";
+            document.getElementById('myimg3456').style.display = 'none';
+            document.getElementById('selbtn3456').style.display = 'inline';
+            document.getElementById('upbtn3456').style.display = 'none';
+            document.getElementById('limp3456').style.display = 'none';
+            $('#myimg3456').attr("src", 'img/logopa1.png');
+            document.getElementById('tituloE456').value = "";
+            document.getElementById('descrE456').value = "";
+            document.getElementById('sitioE456').value = "";
+            document.getElementById('costoE456').value = "";
+            document.getElementById('linkE456').value = "";
+            document.getElementById('form123456').style.display = 'none';
+            document.getElementById('form1233456').style.display = 'block';
+            document.getElementById('tituloE456').disabled = false;
+            document.getElementById('descrE456').disabled = false;
+            document.getElementById('sitioE456').disabled = false;
+            document.getElementById('costoE456').disabled = false;
+            document.getElementById('linkE456').disabled = false;
+            document.getElementById('limpiarE456').style.display = 'inline';
+            document.getElementById('registrarE456').style.display = 'inline';
+            document.getElementById('RecPS').style.display = 'inline';
+        }
+
+        cancel33456.onclick = function () {
+            document.getElementById('form343456').style.display = 'none';
+            document.getElementById('form12334456').style.display = 'none';
+            document.getElementById('form123456').style.display = 'none';
+            document.getElementById('form1233456').style.display = 'block';
+        }
+        eli33456.onclick = function () {
+
+            const storage3456 = getStorage();
+            var name3456 = document.getElementById('idF3456').value;
+            var name13456 = document.getElementById('idF13456').value;
+            deleteObject(
+                sRef(storage3456, `/Productos/` + name3456)
+            ).then(() => {
+
+                firebase.database().ref('/Productos Similares/' + name13456).remove();
+                recargar1PS();
+                document.getElementById('eli33456').style.display = 'inline';
+                document.getElementById('limp3456').style.display = 'none';
+                document.getElementById('cancel33456').style.display = 'inline';
+                document.getElementById('form343456').style.display = 'none';
+                document.getElementById('form12334456').style.display = 'none';
+                document.getElementById('form123456').style.display = 'none';
+                document.getElementById('form1233456').style.display = 'block';
+                document.getElementById('RecPS').style.display = 'inline';
+
+            });
+        }
+
+        // ------- Proceso de subida--------------//
+        async function UploadProcess3456() {
+
+            var ImgToUpload3456 = files3456[0];
+
+            var ImgName3456 = namebox3456.value;
+
+            const metaData3456 = {
+                contentType: ImgToUpload3456.type
+            }
+
+            const storage3456 = getStorage();
+
+            const stroageRef3456 = sRef(storage3456, "/Productos/" + ImgName3456);
+
+            const UploadTask3456 = uploadBytesResumable(stroageRef3456, ImgToUpload3456, metaData3456);
+            document.getElementById('upprogress3456').style.display = 'block';
+            UploadTask3456.on('state-changed', (snapshot) => {
+                var progess3456 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab3456.innerHTML = "Subiendo " + progess3456.toFixed() + "%";
+                document.getElementById('selbtn3456').style.display = 'none';
+                document.getElementById('upbtn3456').style.display = 'none';
+                document.getElementById('limp3456').style.display = 'none';
+                document.getElementById('desas456').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask3456.snapshot.ref).then((downloadURL) => {
+
+                        firebase.database().ref('Productos Similares/').push()
+                            .set({
+
+                                'descripción': descrE456.value,
+                                'link': linkE456.value,
+                                'nombre': tituloE456.value,
+                                'nombresito': namebox3456.value,
+                                'precio': costoE456.value,
+                                'sitio': sitioE456.value,
+                                'url': downloadURL
+                            })
+
+
+                        namebox3456.value = "";
+                        proglab3456.value = "";
+                        document.getElementById('myimg3456').style.display = 'none';
+                        document.getElementById('selbtn3456').style.display = 'inline';
+                        document.getElementById('upbtn3456').style.display = 'none';
+                        document.getElementById('limp3456').style.display = 'none';
+                        $('#myimg3456').attr("src", 'img/logopa1.png');
+                        document.getElementById('form1233456').style.display = 'block';
+                        document.getElementById('upprogress3456').style.display = 'none';
+                        document.getElementById('tituloE456').value = "";
+                        document.getElementById('descrE456').value = "";
+                        document.getElementById('sitioE456').value = "";
+                        document.getElementById('costoE456').value = "";
+                        document.getElementById('linkE456').value = "";
+                        document.getElementById('form123456').style.display = 'none';
+                        document.getElementById('tituloE456').disabled = false;
+                        document.getElementById('descrE456').disabled = false;
+                        document.getElementById('sitioE456').disabled = false;
+                        document.getElementById('costoE456').disabled = false;
+                        document.getElementById('linkE456').disabled = false;
+                        document.getElementById('limpiarE456').style.display = 'inline';
+                        document.getElementById('registrarE456').style.display = 'inline';
+                        recargar1PS();
+                        document.getElementById('upprogress3456').style.display = 'none';
+                        document.getElementById('RecPS').style.display = 'inline';
+                        document.getElementById('registrarE45').style.display = 'inline';
+                        document.getElementById('RefresRco').style.display = 'inline';
+                    });
+
+                }
+
+            );
+        }
+        UpBtn3456.onclick = UploadProcess3456;
+
+        //-------------------------------------Recomendaciones-----------------------------//
+        // ------- variables y referencias--------------//
+        var files345 = [];
+        var reader345 = new FileReader();
+        var tituloE45 = document.getElementById('tituloE45');
+        var descrE45 = document.getElementById('descrE45');
+        var desas45 = document.getElementById('desas45');
+        var namebox345 = document.getElementById('namebox345');
+        var myimg345 = document.getElementById('myimg345');
+        var proglab345 = document.getElementById('upprogress345');
+        var SelBtn345 = document.getElementById('selbtn345');
+        var UpBtn345 = document.getElementById('upbtn345');
+        var limp345 = document.getElementById('limp345');
+        var input345 = document.createElement('input');
+        input345.type = 'file';
+        var eli3345 = document.getElementById('eli3345');
+        var sus4345 = document.getElementById('sus4345');
+        var cancel3345 = document.getElementById('cancel3345');
+        desas45.onclick = function () {
+            namebox345.value = "";
+            proglab345.value = "";
+            document.getElementById('myimg345').style.display = 'none';
+            document.getElementById('selbtn345').style.display = 'inline';
+            document.getElementById('upbtn345').style.display = 'none';
+            document.getElementById('limp345').style.display = 'none';
+            $('#myimg345').attr("src", 'img/logopa1.png');
+            document.getElementById('tituloE45').value = "";
+            document.getElementById('descrE45').value = "";
+            document.getElementById('tituloE45').disabled = false;
+            document.getElementById('descrE45').disabled = false;
+            document.getElementById('form12345').style.display = 'none';
+            document.getElementById('limpiarE45').style.display = 'inline';
+            document.getElementById('registrarE45').style.display = 'inline';
+            document.getElementById('RefresRco').style.display = 'inline';
+
+        }
+        input345.onchange = e => {
+            files345 = e.target.files;
+
+            var extention345 = GetFileExt345(files345[0]);
+            var name345 = GetFileName345(files345[0]);
+
+            namebox345.value = name345 + extention345;
+
+            reader345.readAsDataURL(files345[0]);
+        }
+        reader345.onload = function () {
+            myimg345.src = reader345.result;
+        }
+        // ------- Selection--------------//
+        SelBtn345.onclick = function () {
+            input345.click();
+            document.getElementById('myimg345').style.display = 'inline';
+            document.getElementById('selbtn345').style.display = 'none';
+            document.getElementById('upbtn345').style.display = 'inline';
+            document.getElementById('limp345').style.display = 'inline';
+            document.getElementById('atrasREco').style.display = 'none';
+
+        }
+        function GetFileExt345(file) {
+            var temp345 = file.name.split('.');
+            var ext345 = temp345.slice((temp345.length - 1), (temp345.length));
+            return '.' + ext345[0];
+        }
+        function GetFileName345(file) {
+            var temp345 = file.name.split('.');
+            var fname345 = temp345.slice(0, -1).join('.');
+            return fname345;
+        }
+        limp345.onclick = function () {
+            namebox345.value = "";
+            proglab345.value = "";
+            document.getElementById('myimg345').style.display = 'none';
+            document.getElementById('selbtn345').style.display = 'inline';
+            document.getElementById('upbtn345').style.display = 'none';
+            document.getElementById('limp345').style.display = 'none';
+            $('#myimg345').attr("src", 'img/logopa1.png');
+            document.getElementById('atrasREco').style.display = 'inline';
+        }
+        eli33465.onclick = function () {
+            const storage345 = getStorage();
+            var name345 = document.getElementById('idF345').value;
+            var name1345 = document.getElementById('idF1345').value;
+            deleteObject(
+                sRef(storage345, `/Recomendaciones/` + name345)
+            ).then(() => {
+                firebase.database().ref('/Recomendaciones/' + name1345).remove();
+                document.getElementById('eli33465').style.display = 'inline';
+                document.getElementById('limp345').style.display = 'none';
+                document.getElementById('cancel3345').style.display = 'inline';
+                recargar1Reco();
+                document.getElementById('form123345').style.display = 'none';
+                document.getElementById('form12345').style.display = 'none';
+                document.getElementById('form34345').style.display = 'none';
+                document.getElementById('form123345').style.display = 'block';
+            });
+        }
+        cancel3345.onclick = function () {
+            document.getElementById('form123345').style.display = 'none';
+            document.getElementById('form12345').style.display = 'none';
+            document.getElementById('form34345').style.display = 'none';
+            document.getElementById('form123345').style.display = 'block';
+        }
+        // ------- Proceso de subida--------------//
+        async function UploadProcess345() {
+            var ImgToUpload345 = files345[0];
+
+            var ImgName345 = namebox345.value;
+
+            const metaData345 = {
+                contentType: ImgToUpload345.type
+            }
+
+            const storage345 = getStorage();
+
+            const stroageRef345 = sRef(storage345, "/Recomendaciones/" + ImgName345);
+
+            const UploadTask345 = uploadBytesResumable(stroageRef345, ImgToUpload345, metaData345);
+            document.getElementById('upprogress345').style.display = 'block';
+            UploadTask345.on('state-changed', (snapshot) => {
+
+                var progess345 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab345.innerHTML = "Subiendo " + progess345.toFixed() + "%";
+                document.getElementById('selbtn345').style.display = 'none';
+                document.getElementById('upbtn345').style.display = 'none';
+                document.getElementById('limp345').style.display = 'none';
+                document.getElementById('desas45').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask345.snapshot.ref).then((downloadURL) => {
+
+
+                        firebase.database().ref('Recomendaciones/').push()
+                            .set({
+                                'imagen': downloadURL,
+                                'nombresito': namebox345.value,
+                                'nombre': tituloE45.value,
+                                'descripcion': descrE45.value
+                            })
+                        namebox345.value = "";
+                        proglab345.value = "";
+                        document.getElementById('myimg345').style.display = 'none';
+                        document.getElementById('selbtn345').style.display = 'inline';
+                        document.getElementById('upbtn345').style.display = 'none';
+                        document.getElementById('limp345').style.display = 'none';
+                        $('#myimg345').attr("src", 'img/logopa1.png');
+
+                        document.getElementById('upprogress345').style.display = 'none';
+                        document.getElementById("tituloE45").value = "";
+                        document.getElementById("descrE45").value = "";
+                        document.getElementById('form12345').style.display = 'none';
+                        document.getElementById("tituloE45").disabled = false;
+                        document.getElementById("descrE45").disabled = false;
+                        document.getElementById('limpiarE45').style.display = 'inline';
+                        document.getElementById('registrarE45').style.display = 'inline';
+                        recargar1Reco();
+                        document.getElementById('upprogress345').style.display = 'none';
+                        document.getElementById('RefresRco').style.display = 'inline';
+                    });
+
+                }
+
+            );
+        }
+        UpBtn345.onclick = UploadProcess345;
+
+        //-------------------------------------Conocenos vane-----------------------------//
+        // ------- variables y referencias--------------//
+        var files956 = [];
+        var reader956 = new FileReader();
+        var namebox956 = document.getElementById('namebox956');// 
+        var myimg956 = document.getElementById('myimg956');// 
+        var proglab956 = document.getElementById('upprogress956');// 
+        var SelBtn956 = document.getElementById('selbtn956');// OCUPO
+        var UpBtn956 = document.getElementById('upbtn956');// 
+        var limp956 = document.getElementById('limp956');// OCUPO
+        var input956 = document.createElement('input');
+        var sus5956 = document.getElementById('sus5956');// 
+        var eli39 = document.getElementById('eli39');
+        var cancel39 = document.getElementById('cancel39');
+        input956.type = 'file';
+        input956.onchange = e => {
+            files956 = e.target.files;
+
+            var extention956 = GetFileExt956(files956[0]);
+            var name956 = GetFileName956(files956[0]);
+
+            namebox956.value = name956 + extention956;
+
+            reader956.readAsDataURL(files956[0]);
+        }
+        reader956.onload = function () {
+
+            myimg956.src = reader956.result;
+        }
+        SelBtn956.onclick = function () {
+            input956.click();
+            document.getElementById('selbtn956').style.display = 'none';
+            document.getElementById('myimg956').style.display = 'inline';
+            document.getElementById('upbtn956').style.display = 'inline';
+            document.getElementById('limp956').style.display = 'inline';
+        }
+        function GetFileExt956(file) {
+            var temp956 = file.name.split('.');
+            var ext956 = temp956.slice((temp956.length - 1), (temp956.length));
+            return '.' + ext956[0];
+        }
+        function GetFileName956(file) {
+            var temp956 = file.name.split('.');
+            var fname956 = temp956.slice(0, -1).join('.');
+            return fname956;
+        }
+        eli39.onclick = function () {
+
+            const storage956 = getStorage();
+            var name956 = document.getElementById('idF9').value;
+            var name1956 = document.getElementById('idF19').value;
+            deleteObject(
+                sRef(storage956, `/Fotos/Arely Vanessa/` + name956)
+            ).then(() => {
+
+                firebase.database().ref('/Redes/Arely Vanessa/imagen').remove();
+                firebase.database().ref('/Redes/Arely Vanessa/nombre').remove();
+
+                document.getElementById('eli39').style.display = 'none';
+                document.getElementById('limp956').style.display = 'none';
+                document.getElementById('cancel39').style.display = 'none';
+                restaurar1();
+                recargarCpon();
+            });
+        }
+        cancel39.onclick = function () {
+            restaurar1();
+            document.getElementById('selecUs').style.display = 'inline';
+        }
+        limp956.onclick = function () {
+            namebox956.value = "";
+            proglab956.value = "";
+            document.getElementById('myimg956').style.display = 'none';
+            document.getElementById('selbtn956').style.display = 'inline';
+            document.getElementById('upbtn956').style.display = 'none';
+            document.getElementById('limp956').style.display = 'inline';
+            $('#myimg956').attr("src", 'img/logopa1.png');
+        }
+        // ------- Proceso de subida--------------//
+        async function UploadProcess956() {
+
+            var ImgToUpload956 = files956[0];
+
+            var ImgName956 = namebox956.value;
+
+            const metaData956 = {
+                contentType: ImgToUpload956.type
+            }
+
+
+            const storage956 = getStorage();
+
+            const stroageRef956 = sRef(storage956, "/Fotos/Arely Vanessa/" + ImgName956);
+
+            const UploadTask956 = uploadBytesResumable(stroageRef956, ImgToUpload956, metaData956);
+
+            UploadTask956.on('state-changed', (snapshot) => {
+                document.getElementById('upprogress956').style.display = 'block';
+                var progess956 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab956.innerHTML = "Subiendo " + progess956.toFixed() + "%";
+                document.getElementById('selbtn956').style.display = 'none';
+                document.getElementById('upbtn956').style.display = 'none';
+                document.getElementById('limp956').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask956.snapshot.ref).then((downloadURL) => {
+
+
+                        firebase.database().ref('/Redes/Arely Vanessa').update({
+                            "imagen": downloadURL, "nombre": namebox956.value
+                        });
+                        document.getElementById('upprogress956').style.display = 'none';
+                        restaurar1();
+                        recargarCpon();
+                    });
+
+                }
+
+            );
+        }
+        UpBtn956.onclick = UploadProcess956;
+        //-------------------------------------COnocenos lale-----------------------------//
+        // ------- variables y referencias--------------//
+        var files91 = [];
+        var reader91 = new FileReader();
+        var namebox91 = document.getElementById('namebox91');//
+        var myimg91 = document.getElementById('myimg91');//
+        var proglab91 = document.getElementById('upprogress91');//
+        var SelBtn91 = document.getElementById('selbtn91');//
+        var UpBtn91 = document.getElementById('upbtn91');//
+        var limp91 = document.getElementById('limp91');//
+        var input91 = document.createElement('input');//
+        var eli391 = document.getElementById('eli391');//
+        var sus491 = document.getElementById('sus491');//
+        var sus591 = document.getElementById('sus591');//
+        var cancel391 = document.getElementById('cancel391');//
+        input91.type = 'file';
+        input91.onchange = e => {
+            files91 = e.target.files;
+
+            var extention91 = GetFileExt91(files91[0]);
+            var name91 = GetFileName91(files91[0]);
+            namebox91.value = name91 + extention91;
+
+            reader91.readAsDataURL(files91[0]);
+        }
+        reader91.onload = function () {
+
+            myimg91.src = reader91.result;
+        }
+        // ------- Selection--------------//
+        SelBtn91.onclick = function () {
+            input91.click();
+            document.getElementById('myimg91').style.display = 'inline';
+            document.getElementById('selbtn91').style.display = 'none';
+            document.getElementById('upbtn91').style.display = 'inline';
+            document.getElementById('limp91').style.display = 'inline';
+        }
+        function GetFileExt91(file) {
+            var temp91 = file.name.split('.');
+            var ext91 = temp91.slice((temp91.length - 1), (temp91.length));
+            return '.' + ext91[0];
+        }
+        function GetFileName91(file) {
+            var temp91 = file.name.split('.');
+            var fname91 = temp91.slice(0, -1).join('.');
+            return fname91;
+        }
+        limp91.onclick = function () {
+            namebox91.value = "";
+            proglab91.value = "";
+            document.getElementById('myimg91').style.display = 'none';
+            document.getElementById('selbtn91').style.display = 'inline';
+            document.getElementById('upbtn91').style.display = 'none';
+            document.getElementById('limp91').style.display = 'inline';
+            $('#myimg91').attr("src", 'img/logopa1.png');
+        }
+        eli391.onclick = function () {
+
+            const storage91 = getStorage();
+            var name91 = document.getElementById('idF912').value;
+            var name191 = document.getElementById('idF1912').value;
+            deleteObject(
+                sRef(storage91, `/Fotos/Alejandro/` + name91)
+            ).then(() => {
+
+                firebase.database().ref('/Redes/Alejandro/imagen').remove();
+                firebase.database().ref('/Redes/Alejandro/nombre').remove();
+
+                document.getElementById('eli391').style.display = 'none';
+                document.getElementById('limp91').style.display = 'none';
+                document.getElementById('cancel391').style.display = 'none';
+                restaurar1();
+                recargarCpon();
+            });
+        }
+        cancel391.onclick = function () {
+            restaurar1();
+            document.getElementById('selecUs').style.display = 'inline';
+        }
+        // ------- Proceso de subida--------------//
+        async function UploadProcess91() {
+            var ImgToUpload91 = files91[0];
+
+            var ImgName91 = namebox91.value;
+
+            const metaData91 = {
+                contentType: ImgToUpload91.type
+            }
+
+            const storage91 = getStorage();
+
+            const stroageRef91 = sRef(storage91, "/Fotos/Alejandro/" + ImgName91);
+
+            const UploadTask91 = uploadBytesResumable(stroageRef91, ImgToUpload91, metaData91);
+
+            UploadTask91.on('state-changed', (snapshot) => {
+                document.getElementById('upprogress956').style.display = 'block';
+                var progess91 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab91.innerHTML = "Subiendo " + progess91.toFixed() + "%";
+                document.getElementById('selbtn91').style.display = 'none';
+                document.getElementById('upbtn91').style.display = 'none';
+                document.getElementById('limp91').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask91.snapshot.ref).then((downloadURL) => {
+
+
+                        firebase.database().ref('/Redes/Alejandro').update({
+                            "imagen": downloadURL, "nombre": namebox91.value
+                        });
+                        document.getElementById('upprogress956').style.display = 'none';
+                        restaurar1();
+                        recargarCpon();
+                    });
+
+                }
+
+            );
+        }
+        UpBtn91.onclick = UploadProcess91;
+
+        //-------------------------------------Tutor-----------------------------//
+  
+        // ------- variables y referencias--------------//
+        var files = [];
+        var reader = new FileReader();
+        var nodn = document.getElementById('nodn');
+        var namebox = document.getElementById('namebox');
+        var myimg = document.getElementById('myimg');
+        var proglab = document.getElementById('upprogress');
+        var SelBtn = document.getElementById('selbtn');
+        var UpBtn = document.getElementById('upbtn');
+        var DownBtn = document.getElementById('downbtn');
+        var limp = document.getElementById('limp');
+        var input = document.createElement('input');
+        var eli3 = document.getElementById('eli3');
+        var sus4 = document.getElementById('sus4');
+        var sus5 = document.getElementById('sus5');
+        var cancel3 = document.getElementById('cancel3');
+        input.type = 'file';
+
+        input.onchange = e => {
+            files = e.target.files;
+
+            var extention = GetFileExt(files[0]);
+            var name = GetFileName(files[0]);
+
+            namebox.value = name + extention;
+
+            reader.readAsDataURL(files[0]);
+        }
+        reader.onload = function () {
+
+            myimg.src = reader.result;
+        }
+        // ------- Selection--------------//
+        SelBtn.onclick = function () {
+            input.click();
+            document.getElementById('myimg').style.display = 'inline';
+            document.getElementById('selbtn').style.display = 'none';
+            document.getElementById('upbtn').style.display = 'inline';
+            document.getElementById('limp').style.display = 'inline';
+        }
+        function GetFileExt(file) {
+            var temp = file.name.split('.');
+            var ext = temp.slice((temp.length - 1), (temp.length));
+            return '.' + ext[0];
+        }
+        function GetFileName(file) {
+            var temp = file.name.split('.');
+            var fname = temp.slice(0, -1).join('.');
+            return fname;
+        }
+        limp.onclick = function () {
+            namebox.value = "";
+            proglab.value = "";
+            document.getElementById('myimg').style.display = 'none';
+            document.getElementById('selbtn').style.display = 'inline';
+            document.getElementById('upbtn').style.display = 'none';
+            document.getElementById('limp').style.display = 'none';
+            $('#myimg').attr("src", 'img/logopa1.png');
+        }
+        cancel3.onclick = function () {
+            document.getElementById('label3').style.display = 'inline';
+            document.getElementById('form12').style.display = 'block';
+            document.getElementById('form34').style.display = 'none';
+            namebox.value = "";
+            proglab.value = "";
+
+            document.getElementById('myimg').style.display = 'none';
+            document.getElementById('selbtn').style.display = 'inline';
+            document.getElementById('upbtn').style.display = 'none';
+            document.getElementById('limp').style.display = 'none';
+            $('#myimg').attr("src", 'img/logopa1.png');
+        }
+        eli3.onclick = function () {
+
+            const storage = getStorage();
+            var name = document.getElementById('idF').value;
+            var name1 = document.getElementById('idF1').value;
+            deleteObject(
+                sRef(storage, `Slider1/` + name)
+            ).then(() => {
+
+                firebase.database().ref('Slider1/' + name1).remove();
+                document.getElementById('form34').style.display = 'none';
+                document.getElementById('form12').style.display = 'block';
+                galT();
+            });
+        }
+
+        async function UploadProcess() {
+
+            var ImgToUpload = files[0];
+
+            var ImgName = namebox.value;
+
+            const metaData = {
+                contentType: ImgToUpload.type
+            }
+
+            const storage = getStorage();
+
+            const stroageRef = sRef(storage, "/Slider1/" + ImgName);
+
+            const UploadTask = uploadBytesResumable(stroageRef, ImgToUpload, metaData);
+
+            UploadTask.on('state-changed', (snapshot) => {
+
+                document.getElementById('upprogress').style.display = 'block';
+                var progess = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab.innerHTML = "Subiendo " + progess.toFixed() + "%";
+                document.getElementById('selbtn').style.display = 'none';
+                document.getElementById('upbtn').style.display = 'none';
+                document.getElementById('limp').style.display = 'none';
+                document.getElementById('RecargTu').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask.snapshot.ref).then((downloadURL) => {
+
+
+                        firebase.database().ref('Slider1/').push()
+                            .set({ 'imagen': downloadURL, 'nombre': namebox.value })
+                        document.getElementById('upprogress').style.display = 'none';
+                        namebox.value = "";
+                        proglab.value = "";
+
+                        document.getElementById('myimg').style.display = 'none';
+                        document.getElementById('selbtn').style.display = 'inline';
+                        document.getElementById('upbtn').style.display = 'none';
+                        document.getElementById('limp').style.display = 'none';
+                        $('#myimg').attr("src", 'img/logopa1.png');
+                        document.getElementById('upprogress').style.display = 'none';
+                        document.getElementById('RecargTu').style.display = 'inline';
+                        galT();
+                    });
+
+                }
+
+            );
+        }
+        UpBtn.onclick = UploadProcess;
+        //-------------------------------------Alumno-----------------------------//
+        // ------- variables y referencias--------------//
+        var files1 = [];
+        var reader1 = new FileReader();
+        var namebox1 = document.getElementById('namebox1');
+        var myimg1 = document.getElementById('myimg1');
+        var proglab1 = document.getElementById('upprogress1');
+        var SelBtn1 = document.getElementById('selbtn1');
+        var UpBtn1 = document.getElementById('upbtn1');
+        var limp1 = document.getElementById('limp1');
+        var input1 = document.createElement('input');
+        var eli31 = document.getElementById('eli31');
+        var sus41 = document.getElementById('sus41');
+        var sus51 = document.getElementById('sus51');
+        var cancel31 = document.getElementById('cancel31');
+        input1.type = 'file';
+
+        input1.onchange = e => {
+            files1 = e.target.files;
+
+            var extention1 = GetFileExt1(files1[0]);
+            var name1 = GetFileName1(files1[0]);
+
+            namebox1.value = name1 + extention1;
+
+            reader1.readAsDataURL(files1[0]);
+        }
+        reader1.onload = function () {
+
+            myimg1.src = reader1.result;
+        }
+        // ------- Selection--------------//
+        SelBtn1.onclick = function () {
+            input1.click();
+            document.getElementById('myimg1').style.display = 'inline';
+            document.getElementById('selbtn1').style.display = 'none';
+            document.getElementById('upbtn1').style.display = 'inline';
+            document.getElementById('limp1').style.display = 'inline';
+        }
+        limp1.onclick = function () {
+            namebox1.value = "";
+            proglab1.value = "";
+            document.getElementById('myimg1').style.display = 'none';
+            document.getElementById('selbtn1').style.display = 'inline';
+            document.getElementById('upbtn1').style.display = 'none';
+            document.getElementById('limp1').style.display = 'none';
+            $('#myimg1').attr("src", 'img/logopa1.png');
+        }
+        eli31.onclick = function () {
+
+            const storage1 = getStorage();
+            var name1 = document.getElementById('idF111').value;
+            var name11 = document.getElementById('idF11').value;
+            deleteObject(
+                sRef(storage1, `Slider2/` + name1)
+            ).then(() => {
+
+                firebase.database().ref('Slider2/' + name11).remove();
+                document.getElementById('eli31').style.display = 'none';
+                document.getElementById('limp1').style.display = 'none';
+                document.getElementById('cancel31').style.display = 'none';
+                document.getElementById('upprogress1').style.display = 'none';
+                document.getElementById('label313').style.display = 'inline';
+                document.getElementById('form121').style.display = 'block';
+                document.getElementById('form341').style.display = 'none';
+                namebox1.value = "";
+                proglab1.value = "";
+                document.getElementById('myimg1').style.display = 'none';
+                document.getElementById('selbtn1').style.display = 'inline';
+                document.getElementById('upbtn1').style.display = 'none';
+                document.getElementById('limp1').style.display = 'none';
+                $('#myimg1').attr("src", 'img/logopa1.png');
+                galAlum();
+            });
+        }
+
+
+        cancel31.onclick = function () {
+            document.getElementById('label313').style.display = 'inline';
+            document.getElementById('form121').style.display = 'block';
+            document.getElementById('form341').style.display = 'none';
+            namebox1.value = "";
+            proglab1.value = "";
+            document.getElementById('myimg1').style.display = 'none';
+            document.getElementById('selbtn1').style.display = 'inline';
+            document.getElementById('upbtn1').style.display = 'none';
+            document.getElementById('limp1').style.display = 'none';
+            $('#myimg1').attr("src", 'img/logopa1.png');
+            document.getElementById('upprogress1').style.display = 'none';
+        }
+        function GetFileExt1(file) {
+            var temp1 = file.name.split('.');
+            var ext1 = temp1.slice((temp1.length - 1), (temp1.length));
+            return '.' + ext1[0];
+        }
+        function GetFileName1(file) {
+            var temp1 = file.name.split('.');
+            var fname1 = temp1.slice(0, -1).join('.');
+            return fname1;
+        }
+        // ------- Proceso de subida--------------//
+        async function UploadProcess1() {
+            document.getElementById('upprogress1').style.display = 'block';
+            var ImgToUpload1 = files1[0];
+
+            var ImgName1 = namebox1.value;
+
+            const metaData1 = {
+                contentType: ImgToUpload1.type
+            }
+
+            const storage1 = getStorage();
+
+            const stroageRef1 = sRef(storage1, "/Slider2/" + ImgName1);
+
+            const UploadTask1 = uploadBytesResumable(stroageRef1, ImgToUpload1, metaData1);
+
+            UploadTask1.on('state-changed', (snapshot) => {
+
+                var progess1 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab1.innerHTML = "Subiendo " + progess1.toFixed() + "%";
+                document.getElementById('selbtn1').style.display = 'none';
+                document.getElementById('upbtn1').style.display = 'none';
+                document.getElementById('limp1').style.display = 'none';
+
+                document.getElementById('Refhalu').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask1.snapshot.ref).then((downloadURL) => {
+
+
+                        firebase.database().ref('Slider2/').push()
+                            .set({ 'imagen': downloadURL, 'nombre': namebox1.value })
+                        namebox1.value = "";
+                        proglab1.value = "";
+                        document.getElementById('myimg1').style.display = 'none';
+                        document.getElementById('selbtn1').style.display = 'inline';
+                        document.getElementById('upbtn1').style.display = 'none';
+                        document.getElementById('limp1').style.display = 'none';
+                        document.getElementById('selbtn1').style.display = 'inline';
+                        document.getElementById('upprogress1').style.display = 'none';
+                        document.getElementById('Refhalu').style.display = 'inline';
+                        $('#myimg1').attr("src", 'img/logopa1.png');
+                        galAlum();
+
+                    });
+
+                }
+
+            );
+        }
+        UpBtn1.onclick = UploadProcess1;
+        //-------------------------------------Admin-----------------------------//
+
+        // ------- variables y referencias--------------//
+        var files12 = [];
+        var reader12 = new FileReader();
+        var namebox12 = document.getElementById('namebox12');
+        var myimg12 = document.getElementById('myimg12');
+        var proglab12 = document.getElementById('upprogress12');
+        var SelBtn12 = document.getElementById('selbtn12');
+        var UpBtn12 = document.getElementById('upbtn12');
+        var limp12 = document.getElementById('limp12');
+        var input12 = document.createElement('input');
+        var eli312 = document.getElementById('eli312');
+        var sus412 = document.getElementById('sus412');
+        var sus512 = document.getElementById('sus512');
+        var cancel312 = document.getElementById('cancel312');
+        input12.type = 'file';
+
+        input12.onchange = e => {
+            files12 = e.target.files;
+
+            var extention12 = GetFileExt12(files12[0]);
+            var name12 = GetFileName12(files12[0]);
+
+            namebox12.value = name12 + extention12;
+
+            reader12.readAsDataURL(files12[0]);
+        }
+        reader12.onload = function () {
+
+            myimg12.src = reader12.result;
+        }
+        // ------- Selection--------------//
+        SelBtn12.onclick = function () {
+            input12.click();
+            $('#myimg12').attr("src", 'img/logopa1.png');
+            document.getElementById('myimg12').style.display = 'inline';
+            document.getElementById('selbtn12').style.display = 'none';
+            document.getElementById('upbtn12').style.display = 'inline';
+            document.getElementById('limp12').style.display = 'inline';
+        }
+        limp12.onclick = function () {
+            namebox12.value = "";
+            proglab12.value = "";
+            document.getElementById('myimg12').style.display = 'none';
+            document.getElementById('selbtn12').style.display = 'inline';
+            document.getElementById('upbtn12').style.display = 'none';
+            document.getElementById('limp12').style.display = 'none';
+            $('#myimg12').attr("src", 'img/logopa1.png');
+        }
+        eli312.onclick = function () {
+
+            const storage1 = getStorage();
+            var name12 = document.getElementById('idF1112').value;
+            var name112 = document.getElementById('idF112').value;
+            deleteObject(
+                sRef(storage1, `Slider3/` + name12)
+            ).then(() => {
+
+                firebase.database().ref('Slider3/' + name112).remove();
+
+
+                document.getElementById('eli312').style.display = 'none';
+                document.getElementById('limp12').style.display = 'none';
+                document.getElementById('cancel312').style.display = 'none';
+                document.getElementById('upprogress12').style.display = 'none';
+
+                document.getElementById('label312').style.display = 'inline';
+                document.getElementById('form1212').style.display = 'block';
+                document.getElementById('form3412').style.display = 'none';
+                namebox1.value = "";
+                proglab1.value = "";
+                document.getElementById('myimg12').style.display = 'none';
+                document.getElementById('selbtn12').style.display = 'inline';
+                document.getElementById('upbtn12').style.display = 'none';
+                document.getElementById('limp12').style.display = 'none';
+                $('#myimg12').attr("src", 'img/logopa1.png');
+                galAdmin();
+            });
+        }
+
+        cancel312.onclick = function () {
+            document.getElementById('label312').style.display = 'inline';
+            document.getElementById('form1212').style.display = 'block';
+            document.getElementById('form3412').style.display = 'none';
+            namebox12.value = "";
+            proglab12.value = "";
+            document.getElementById('myimg12').style.display = 'none';
+            document.getElementById('selbtn12').style.display = 'inline';
+            document.getElementById('upbtn12').style.display = 'none';
+            document.getElementById('limp12').style.display = 'none';
+            $('#myimg12').attr("src", 'img/logopa1.png');
+            document.getElementById('upprogress12').style.display = 'none';
+        }
+        function GetFileExt12(file) {
+            var temp12 = file.name.split('.');
+            var ext12 = temp12.slice((temp12.length - 1), (temp12.length));
+            return '.' + ext12[0];
+        }
+        function GetFileName12(file) {
+            var temp12 = file.name.split('.');
+            var fname12 = temp12.slice(0, -1).join('.');
+            return fname12;
+        }
+        // ------- Proceso de subida--------------//
+        async function UploadProcess12() {
+            document.getElementById('upprogress12').style.display = 'block';
+            var ImgToUpload12 = files12[0];
+
+            var ImgName12 = namebox12.value;
+
+            const metaData12 = {
+                contentType: ImgToUpload12.type
+            }
+
+            const storage12 = getStorage();
+
+            const stroageRef12 = sRef(storage12, "/Slider3/" + ImgName12);
+
+            const UploadTask12 = uploadBytesResumable(stroageRef12, ImgToUpload12, metaData12);
+
+            UploadTask12.on('state-changed', (snapshot) => {
+
+                var progess12 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab12.innerHTML = "Subiendo " + progess12.toFixed() + "%";
+                document.getElementById('selbtn12').style.display = 'none';
+                document.getElementById('upbtn12').style.display = 'none';
+                document.getElementById('limp12').style.display = 'none';
+                document.getElementById('RefhADm').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask12.snapshot.ref).then((downloadURL) => {
+
+
+                        firebase.database().ref('Slider3/').push()
+                            .set({ 'imagen': downloadURL, 'nombre': namebox12.value })
+                        namebox12.value = "";
+                        proglab12.value = "";
+                        document.getElementById('myimg12').style.display = 'none';
+                        document.getElementById('selbtn12').style.display = 'inline';
+                        document.getElementById('upbtn12').style.display = 'none';
+                        document.getElementById('limp12').style.display = 'none';
+                        document.getElementById('selbtn12').style.display = 'inline';
+                        document.getElementById('upprogress12').style.display = 'none';
+                        document.getElementById('RefhADm').style.display = 'inline';
+                        galAdmin();
+                    });
+
+                }
+
+            );
+        }
+        UpBtn12.onclick = UploadProcess12;
+        //-------------------------------------Escuelas-----------------------------//
+
+        // ------- variables y referencias--------------//
+        var files3 = [];
+        var reader3 = new FileReader();
+
+        var namebox3 = document.getElementById('namebox3');
+        var myimg3 = document.getElementById('myimg3');
+        var proglab3 = document.getElementById('upprogress3');
+        var SelBtn3 = document.getElementById('selbtn3');
+        var UpBtn3 = document.getElementById('upbtn3');
+        var limp3 = document.getElementById('limp3');
+        var input3 = document.createElement('input');
+        var eli33 = document.getElementById('eli33');
+        var sus43 = document.getElementById('sus43');
+        var sus53 = document.getElementById('sus53');
+        var cancel33 = document.getElementById('cancel33');
+        var tituloE = document.getElementById('tituloE');
+        var descrE = document.getElementById('descrE');
+        var desas = document.getElementById('desas');
+        input3.type = 'file';
+
+        input3.onchange = e => {
+            files3 = e.target.files;
+
+            var extention3 = GetFileExt3(files3[0]);
+            var name3 = GetFileName3(files3[0]);
+
+            namebox3.value = name3 + extention3;
+
+            reader3.readAsDataURL(files3[0]);
+        }
+        reader3.onload = function () {
+            myimg3.src = reader3.result;
+        }
+        // ------- Selection--------------//
+        SelBtn3.onclick = function () {
+            input3.click();
+            document.getElementById('myimg3').style.display = 'inline';
+            document.getElementById('selbtn3').style.display = 'none';
+            document.getElementById('Refhyrf').style.display = 'none';
+            document.getElementById('upbtn3').style.display = 'inline';
+            document.getElementById('limp3').style.display = 'inline';
+            document.getElementById('canceñ34E').style.display = 'inline';
+            document.getElementById('atrasdffgh').style.display = 'none';
+        }
+        desas.onclick = function () {
+            document.getElementById('form1233').style.display = 'block';
+            document.getElementById('registrarE').style.display = 'inline';
+            document.getElementById('limpiarE').style.display = 'inline';
+            document.getElementById('Refhyrf').style.display = 'inline';
+            document.getElementById("tituloE").value = "";
+            document.getElementById("descrE").value = "";
+            document.getElementById('form123').style.display = 'none';
+            document.getElementById("tituloE").disabled = false;
+            document.getElementById("descrE").disabled = false;
+            document.getElementById('form123').style.display = 'none';
+            namebox3.value = "";
+            proglab3.value = "";
+            document.getElementById('myimg3').style.display = 'none';
+            document.getElementById('selbtn3').style.display = 'inline';
+            document.getElementById('upbtn3').style.display = 'none';
+            document.getElementById('limp3').style.display = 'none';
+            $('#myimg3').attr("src", 'img/logopa1.png');
+            document.getElementById('form343').style.display = 'none';
+            document.getElementById('form123357').style.display = 'none';
+        }
+        limp3.onclick = function () {
+            namebox3.value = "";
+            proglab3.value = "";
+            document.getElementById('myimg3').style.display = 'none';
+            document.getElementById('selbtn3').style.display = 'inline';
+            document.getElementById('Refhyrf').style.display = 'none';
+            document.getElementById('upbtn3').style.display = 'none';
+            document.getElementById('limp3').style.display = 'none';
+            
+            $('#myimg3').attr("src", 'img/logopa1.png');
+            document.getElementById('atrasdffgh').style.display = 'inline';
+        }
+        eli33.onclick = function () {
+
+            const storage3 = getStorage();
+            var name3 = document.getElementById('idF3').value;
+            var name13 = document.getElementById('idF13').value;
+            deleteObject(
+                sRef(storage3, `GaleriaE/` + name3)
+            ).then(() => {
+
+                firebase.database().ref('GaleriaE/' + name13).remove();
+
+                document.getElementById('eli33').style.display = 'none';
+                document.getElementById('limp3').style.display = 'none';
+                document.getElementById('cancel33').style.display = 'none';
+                namebox3.value = "";
+                proglab3.value = "";
+                document.getElementById('myimg3').style.display = 'none';
+                document.getElementById('selbtn3').style.display = 'inline';
+                document.getElementById('upbtn3').style.display = 'none';
+                document.getElementById('limp3').style.display = 'none';
+                document.getElementById('Refhyrf').style.display = 'inline';
+                document.getElementById('upprogress3').style.display = 'none';
+                document.getElementById('myimg3').style.display = 'none';
+                document.getElementById('upbtn3').style.display = 'none';
+                document.getElementById('limp3').style.display = 'none';
+                $('#myimg3').attr("src", 'img/logopa1.png');
+                document.getElementById("tituloE").value = "";
+                document.getElementById("descrE").value = "";
+                document.getElementById('tituloE').disabled = false;
+                document.getElementById('descrE').disabled = false;
+                document.getElementById('registrarE').style.display = 'inline';
+                document.getElementById('limpiarE').style.display = 'inline';
+                document.getElementById('form1233').style.display = 'block';
+                document.getElementById('form343').style.display = 'none';
+                document.getElementById('form123357').style.display = 'none';
+                recargarEscu();
+            });
+        }
+
+        canceñ34E.onclick = function () {
+            namebox3.value = "";
+            proglab3.value = "";
+            document.getElementById('myimg3').style.display = 'none';
+            document.getElementById('selbtn3').style.display = 'inline';
+            document.getElementById('upbtn3').style.display = 'none';
+            document.getElementById('limp3').style.display = 'none';
+            document.getElementById('upprogress3').style.display = 'none';
+            $('#myimg3').attr("src", 'img/logopa1.png');
+            document.getElementById("tituloE").value = "";
+            document.getElementById("descrE").value = "";
+            document.getElementById('tituloE').disabled = false;
+            document.getElementById('descrE').disabled = false;
+            document.getElementById('registrarE').style.display = 'inline';
+            document.getElementById('limpiarE').style.display = 'inline';
+            document.getElementById('form1233').style.display = 'block';
+            document.getElementById('form123').style.display = 'none';
+            document.getElementById('form343').style.display = 'none';
+            document.getElementById('Refhyrf').style.display = 'inline';
+            document.getElementById('form123357').style.display = 'none';
+        }
+
+        cancel33.onclick = function () {
+            namebox3.value = "";
+            proglab3.value = "";
+            document.getElementById('myimg3').style.display = 'none';
+            document.getElementById('selbtn3').style.display = 'inline';
+            document.getElementById('upbtn3').style.display = 'none';
+            document.getElementById('limp3').style.display = 'none';
+            document.getElementById('upprogress3').style.display = 'none';
+            $('#myimg3').attr("src", 'img/logopa1.png');
+            document.getElementById("tituloE").value = "";
+            document.getElementById("descrE").value = "";
+            document.getElementById('Refhyrf').style.display = 'inline';
+            document.getElementById('form123').style.display = 'none';
+            document.getElementById('tituloE').disabled = false;
+            document.getElementById('descrE').disabled = false;
+            document.getElementById('registrarE').style.display = 'inline';
+            document.getElementById('limpiarE').style.display = 'inline';
+            document.getElementById('form1233').style.display = 'inline';
+            document.getElementById('form123').style.display = 'none';
+            document.getElementById('form343').style.display = 'none';
+            document.getElementById('form123357').style.display = 'none';
+
+        }
+        function GetFileExt3(file) {
+            var temp3 = file.name.split('.');
+            var ext3 = temp3.slice((temp3.length - 1), (temp3.length));
+            return '.' + ext3[0];
+        }
+        function GetFileName3(file) {
+            var temp3 = file.name.split('.');
+            var fname3 = temp3.slice(0, -1).join('.');
+            return fname3;
+        }
+        // ------- Proceso de subida--------------//
+        async function UploadProcess3() {
+
+            var ImgToUpload3 = files3[0];
+
+            var ImgName3 = namebox3.value;
+
+            const metaData3 = {
+                contentType: ImgToUpload3.type
+            }
+
+            const storage3 = getStorage();
+
+            const stroageRef3 = sRef(storage3, "/GaleriaE/" + ImgName3);
+
+            const UploadTask3 = uploadBytesResumable(stroageRef3, ImgToUpload3, metaData3);
+            document.getElementById('upprogress3').style.display = 'block';
+            UploadTask3.on('state-changed', (snapshot) => {
+            
+                document.getElementById('upprogress3').style.marginBottom = '1%';
+                var progess3 = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+
+                proglab3.innerHTML = "Subiendo " + progess3.toFixed() + "%";
+                document.getElementById('selbtn3').style.display = 'none';
+                document.getElementById('upbtn3').style.display = 'none';
+                document.getElementById('limp3').style.display = 'none';
+                document.getElementById('desas').style.display = 'none';
+                document.getElementById('atrasdffgh').style.display = 'none';
+            },
+                (error) => {
+                    alert("Error: Imagen no subida");
+                },
+                () => {
+                    getDownloadURL(UploadTask3.snapshot.ref).then((downloadURL) => {
+                        firebase.database().ref('GaleriaE/').push()
+                            .set({ 'foto': downloadURL, 'nombre': namebox3.value, 'titulo': tituloE.value, 'descr': descrE.value })
+                        namebox3.value = "";
+                        proglab3.value = "";
+                        document.getElementById('myimg3').style.display = 'none';
+                        document.getElementById('selbtn3').style.display = 'inline';
+                        document.getElementById('upbtn3').style.display = 'none';
+                        document.getElementById('limp3').style.display = 'none';
+                        document.getElementById('Refhyrf').style.display = 'inline';
+                        document.getElementById('upprogress3').style.display = 'none';
+                        document.getElementById('myimg3').style.display = 'none';
+                        document.getElementById('selbtn3').style.display = 'inline';
+                        document.getElementById('upbtn3').style.display = 'none';
+                        document.getElementById('limp3').style.display = 'none';
+                        $('#myimg3').attr("src", 'img/logopa1.png');
+                        document.getElementById("tituloE").value = "";
+                        document.getElementById("descrE").value = "";
+                        document.getElementById('form123').style.display = 'none';
+                        document.getElementById('tituloE').disabled = false;
+                        document.getElementById('descrE').disabled = false;
+                        document.getElementById('registrarE').style.display = 'inline';
+                        document.getElementById('limpiarE').style.display = 'inline';
+                        document.getElementById('form1233').style.display = 'block';
+                        recargarEscu();
+                    });
+
+                }
+
+            );
+        }
+        UpBtn3.onclick = UploadProcess3;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1222 @@
+.contenedorGeneral{
+    width: 100%;
+    overflow: hidden;
+    margin:0 auto;
+    box-sizing: border-box;
+    }
+/*-------------Pie de Pagina-------------*/
+#pie {
+    background-color: #2f1057;
+    text-align: center;
+    width: 100%;
+    font-size: 2vw;
+    text-align: right;
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+/*-------------titulo conocenos-------------*/
+.page-content5 {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    height: 10%;
+    justify-content: right;
+    border-top-left-radius: 2vw;
+
+    border-bottom-left-radius: 2vw;
+}
+
+.page-content5 h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.page-content51 {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    width: 80%;
+    height: 10%;
+    justify-content: right;
+    border-top-left-radius: 2vw;
+
+    border-bottom-left-radius: 2vw;
+}
+
+.page-content51 h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#latera12{
+    width: 30%;
+      margin-top: 1vw;
+      float: right;
+  }
+  #latera122{
+    display: flex;
+    width: 100%;
+      margin-top: 1vw;
+  }
+  /* Para limpiar los floats */
+  .clearfix2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/*_--------------------Contenedor inicial----------------*/
+.fondoH{
+    margin-block-end: 1vw;
+    background: linear-gradient(#e663f759, #63e1f746);
+    border-radius: 2vw;
+}
+.prev {
+    padding-block-end: 2vw;
+    display: flex;
+    width: 100%;
+    height: 45vw;
+}
+#tres22 {
+    width: 100%;
+    height: 20vw;
+}
+#tres222 {
+    width: 100%;
+    height: 20vw;
+}
+#imagenHerramientas {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.prev1 {
+    background: linear-gradient(#c7a3dda8, #41d3eb94);
+    border-radius: 2vw;
+    width: 100%;
+    height: auto;
+}
+
+.contener {
+    height: max-content;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+
+.useID {
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(64, 7, 102);
+    font-size: 5vw;
+    font-weight: bolder;
+}
+.useID2 {
+    margin-top: 10vw;
+    margin-left: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+.useName {
+    margin-left: 1vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+#imaa {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/tutor.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.uso1:hover {
+    cursor: pointer;
+    background: rgb(199, 252, 232);
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.uso1 {
+    text-decoration: none;
+    width: 50%;
+
+    padding: 0.1vw 0.5vw;
+    background: rgba(143, 143, 143, 0);
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: all 0.9s ease;
+    box-shadow: -5px 1px 3px 0px rgb(39 51 199);
+    border-radius: 30px 10px;
+}
+
+#principal {
+    width: 50%;
+    float: left;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#lateral {
+    width: 50%;
+    /* Este será el ancho que tendrá tu columna */
+    float: right;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+    box-sizing: border-box;
+
+}
+
+#tres22,#tres222 {
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+/* Para limpiar los floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-------------texto-------------*/
+#contenedorPr {
+    background: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#desc3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 5%;
+}
+
+#desc31 {
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+
+#wrap {
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 95%;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+#wrap .principal1 {
+    width: 40%;
+    float: left;
+    height: 580px;
+}
+
+
+
+
+#wrap .lateral1 {
+
+    /* Este será el ancho que tendrá tu columna */
+    float: right;
+    height: 580px;
+    width: 60%;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+    position: relative;
+
+}
+
+#principal9 {
+    width: 60%;
+    float: left;
+    margin: 1vw;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#lateral9 {
+    width: 40%;
+    /* Este será el ancho que tendrá tu columna */
+    float: right;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+    box-sizing: border-box;
+
+}
+
+#Component {
+    position: absolute;
+
+}
+
+#Component1 {
+    width: 100%;
+    margin-top: 20%;
+    box-sizing: content-box;
+    text-align: center;
+
+}
+
+#wrap .lateral1 .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 5vw;
+    width: 25vw;
+    line-height: 5vw;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #002369;
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide2:hover {
+    background-color: #002369;
+}
+
+#wrap .lateral1 .btn-slide2:hover span.circle2 {
+    left: 100%;
+    margin-left: -4.5vw;
+    background-color: #fdfdfd;
+    color: #002369;
+}
+
+#wrap .lateral1 .btn-slide2:hover span.title2 {
+    left: 60px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide2:hover span.title-hover2 {
+    opacity: 1;
+    left: 4vw;
+}
+
+#wrap .lateral1 .btn-slide2 span.circle2 {
+    display: block;
+    background-color: #002369;
+    color: #fff;
+    font-size: 1.8vw;
+    position: absolute;
+    float: left;
+    margin: 0.5vw;
+    line-height: 3.5vw;
+    height: 4vw;
+    width: 4vw;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+
+#wrap .lateral1 .btn-slide2 span.title2,
+#wrap .lateral1 .btn-slide2 span.title-hover2 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #002369;
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide2 span.title2,
+#wrap .lateral1 .btn-slide2 span.title-hover2 {
+
+    left: 20%;
+}
+
+#wrap .lateral1 .btn-slide2 span.title-hover2 {
+    left: 80px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide2 span.title-hover2 {
+    color: #fff;
+}
+
+
+#wrap .lateral1 .btn-slide21 {
+    position: relative;
+    display: inline-block;
+    font-size: 1.8vw;
+    height: 5vw;
+    width: 25vw;
+    line-height: 5vw;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #690020;
+
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide21:hover {
+    background-color: #690020;
+}
+
+#wrap .lateral1 .btn-slide21:hover span.circle21 {
+    left: 100%;
+    margin-left: -4.5vw;
+    background-color: #fdfdfd;
+    color: #690020;
+}
+
+
+
+#wrap .lateral1 .btn-slide21:hover span.title21 {
+    left: 40px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide21:hover span.title-hover21 {
+    opacity: 1;
+    left: 4vw;
+}
+
+#wrap .lateral1 .btn-slide21 span.circle21 {
+    display: block;
+    background-color: #690020;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 0.5vw;
+    line-height: 3.5vw;
+    height: 4vw;
+    width: 4vw;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+
+#wrap .lateral1 .btn-slide21 span.title21,
+#wrap .lateral1 .btn-slide21 span.title-hover21 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #690020;
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide21 span.title21,
+#wrap .lateral1 .btn-slide21 span.title-hover21 {
+    left: 20%;
+}
+
+#wrap .lateral1 .btn-slide21 span.title-hover21 {
+    left: 80px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide21 span.title-hover21 {
+    color: #fff;
+}
+
+
+
+
+
+#wrap .lateral1 .btn-slide211 {
+    position: relative;
+    display: inline-block;
+    height: 5vw;
+    width: 25vw;
+    line-height: 5vw;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #461c46;
+
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide211:hover {
+    background-color: #461c46;
+}
+
+#wrap .lateral1 .btn-slide211:hover span.circle211 {
+    left: 100%;
+    margin-left: -4.5vw;
+    background-color: #fdfdfd;
+    color: #461c46;
+}
+
+
+
+#wrap .lateral1.btn-slide211:hover span.title211 {
+    left: 40px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide211:hover span.title-hover211 {
+    opacity: 1;
+    left: 4vw;
+}
+
+#wrap .lateral1 .btn-slide211 span.circle211 {
+    display: block;
+    background-color: #461c46;
+    color: #fff;
+    position: absolute;
+    font-size: 1.8vw;
+    float: left;
+    margin: 0.5vw;
+    line-height: 3.5vw;
+    height: 4vw;
+    width: 4vw;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+
+#wrap .lateral1 .btn-slide211 span.title211,
+#wrap .lateral1 .btn-slide211 span.title-hover211 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #461c46;
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide211 span.title211,
+#wrap .lateral1 .btn-slide211 span.title-hover211 {
+
+    left: 20%;
+}
+
+#wrap .lateral1 .btn-slide211 span.title-hover211 {
+    left: 80px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide211 span.title-hover211 {
+    color: #fff;
+}
+
+
+
+#wrap .lateral1 .btn-slide2111 {
+    position: relative;
+    display: inline-block;
+    height: 5vw;
+    width: 25vw;
+    line-height: 5vw;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #000000;
+
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide2111:hover {
+    background-color: #000000;
+}
+
+#wrap .lateral1 .btn-slide2111:hover span.circle2111 {
+    left: 100%;
+    margin-left: -4.5vw;
+    background-color: #fdfdfd;
+    color: #000000;
+}
+
+
+
+#wrap .lateral1 .btn-slide2111:hover span.title2111 {
+    left: 40px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide2111:hover span.title-hover2111 {
+    opacity: 1;
+    left: 4vw;
+}
+
+#wrap .lateral1 .btn-slide2111 span.circle2111 {
+    display: block;
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    font-size: 1.8vw;
+    float: left;
+    margin: 0.5vw;
+    line-height: 3.5vw;
+    height: 4vw;
+    width: 4vw;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+
+#wrap .lateral1 .btn-slide2111 span.title2111,
+#wrap .lateral1 .btn-slide2111 span.title-hover2111 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #000000;
+    transition: .5s;
+}
+
+#wrap .lateral1 .btn-slide2111 span.title2111,
+#wrap .lateral1 .btn-slide2111 span.title-hover2111 {
+
+    left: 20%;
+}
+
+#wrap .lateral1 .btn-slide2111 span.title-hover2111 {
+    left: 80px;
+    opacity: 0;
+}
+
+#wrap .lateral1 .btn-slide2111 span.title-hover2111 {
+    color: #fff;
+}
+
+.prev0 {
+    background: linear-gradient(#63e1f7ab, #f763deab);
+    height: 10%;
+    width: 100%;
+    justify-content: left;
+    border-top-right-radius: 1vw;
+    border-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.prev11 {
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+
+}
+
+#principal0 {
+    width: 40%;
+    float: left;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#lateral0 {
+    width: 80%;
+    /* Este será el ancho que tendrá tu columna */
+    float: right;
+    margin: 1vw;
+    align-items: center;
+    text-align: center;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+    box-sizing: border-box;
+
+}
+
+.useID1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 500%;
+    font-weight: bolder;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+    width: 98%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    grid-auto-flow: dense;
+
+}
+
+.open-modal p {
+    color: #000000;
+    font-size: 2vw;
+}
+
+.grid-item {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+.open-modal {
+    font-weight: bold;
+    background: transparent;
+    color: var(--white);
+}
+
+:root {
+    --lightgray: #efefef;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, 0.8);
+    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+/* MODAL
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 100000;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+}
+
+.modal-dialog>* {
+    padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+    background: var(--lightgray);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-header .close-modal {
+    font-size: 1.5rem;
+}
+
+.modal p+p {
+    margin-top: 1rem;
+    font-size: 2.2vw;
+}
+
+.modal p {
+    font-size: 3vw;
+}
+
+
+/* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[data-animation] .modal-dialog {
+    opacity: 0;
+    transition: all 0.5s var(--bounceEasing);
+}
+
+[data-animation].is-visible .modal-dialog {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+[data-animation="slideInOutDown"] .modal-dialog {
+    transform: translateY(100%);
+}
+
+[data-animation="slideInOutTop"] .modal-dialog {
+    transform: translateY(-100%);
+}
+
+[data-animation="slideInOutLeft"] .modal-dialog {
+    transform: translateX(-100%);
+}
+
+[data-animation="slideInOutRight"] .modal-dialog {
+    transform: translateX(100%);
+}
+
+[data-animation="zoomInOut"] .modal-dialog {
+    transform: scale(0.2);
+}
+
+[data-animation="rotateInOutDown"] .modal-dialog {
+    transform-origin: top left;
+    transform: rotate(-1turn);
+}
+
+[data-animation="mixInAnimations"].is-visible .modal-dialog {
+    animation: mixInAnimations 2s 0.2s linear forwards;
+}
+
+[data-animation="slideInOutDown"].is-visible .modal-dialog,
+[data-animation="slideInOutTop"].is-visible .modal-dialog,
+[data-animation="slideInOutLeft"].is-visible .modal-dialog,
+[data-animation="slideInOutRight"].is-visible .modal-dialog,
+[data-animation="zoomInOut"].is-visible .modal-dialog,
+[data-animation="rotateInOutDown"].is-visible .modal-dialog {
+    transform: none;
+}
+
+@keyframes mixInAnimations {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    30% {
+        transform: rotate(-20deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(5deg);
+    }
+
+    90% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.modal-content img {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 30vw;
+    height: auto;
+}
+
+.page-content8 {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    height: 10%;
+    width: 100%;
+    justify-content: left;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+
+}
+
+.page-content8 h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contenedor2 {
+    text-align: right;
+    padding-top: 1vw;
+    padding-block-end: 1vw;
+    width: 100%;
+}
+
+#contenedor26 {
+    text-align: right;
+    width: 100%;
+    margin-top: 2vw;
+    margin-block-end: 2vw;
+}
+
+#lateral2 {
+    width: 36%;
+    /* Este será el ancho que tendrá tu columna */
+    float: left;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+}
+
+#lateral26 {
+    width: 50%;
+    /* Este será el ancho que tendrá tu columna */
+    float: left;
+    /* Aquí determinas de lado quieres quede esta "columna" */
+}
+
+/* Para limpiar los floats */
+.clearfix2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix23:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#lista5 {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 60%;
+    width: 100%;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+#lista5 ol {
+    margin: 0 0 0 2em;
+}
+
+#lista5 {
+    width: 60vw;
+    list-style-type: none;
+    list-style-type: decimal !ie;
+    /*IE 7- hack*/
+
+    margin: 0;
+    margin-left: 1em;
+    padding: 1vw;
+
+    counter-reset: li-counter;
+}
+
+#lista5>li {
+    font-size: 1.5vw;
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    border-radius: 1vw;
+    background-color: #eaeaea;
+}
+
+#lista5>li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+
+    font-size: 1.2vw;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #464646;
+    background-color: #d0d0d0;
+
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+.contener0 {
+    height: max-content;
+    width: 100%;
+    height: 50vw;
+    margin: 2vw;
+    display: flex;
+}
+
+/* Para limpiar los floats */
+.clearfix2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-----------Galeria-----*/
+.galeria7 {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria7 img {
+    width: 20vw;
+    object-fit: fill;
+    object-position: center center;
+}
+
+.galeria7 nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10vw;
+}
+
+
+.galeria7 nav ul li a img {
+    width: 8vw;
+    height: 50%;
+    opacity: 50%;
+    transition: 0.3s;
+    filter: grayscale(50%);
+    border-radius: 25%;
+}
+
+.galeria7 nav ul li a img:hover {
+    opacity: 100%;
+    margin-top: -5px;
+    filter: grayscale(0%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3)
+}
+
+.galeria7 nav ul li a img:active {
+    transform: scale(0.8)
+}
+
+/*--------Video--------*/
+
+
+.page-content10 {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    height: 10%;
+    justify-content: right;
+    border-top-left-radius: 2vw;
+
+    border-bottom-left-radius: 2vw;
+}
+
+.page-content10 h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#latera125{
+    width: 20%;
+      margin-top: 1vw;
+      float: right;
+  }
+  /* Para limpiar los floats */
+  .clearfix2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*-------------Problematica-------------*/
+#contenedor45 {
+    height: 50vw;
+    margin-block-end: 1vw;
+    background: url(../img/Nuevo\ proyecto.png);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+@media only screen  and (min-width: 700px){
+    #latera12 {
+        width: 15%;
+    }
+    .page-content5 h3 {
+        font-size: 2vw;
+    }
+    .useID {
+        font-size: 4vw;
+        margin-block-end: 2vw;
+    }
+    .useID2 {
+        font-size: 4vw;
+        margin-top: 20%;
+        margin-block-end: 2vw;
+    }
+    .useName {
+        font-size: 1.5vw;
+        margin-block-end: 2vw;
+    }
+    #tres22 {
+        width: 100%;
+        margin-top: 9vw;
+    }
+    .prev {
+        height: 46vw;
+    }
+    #lateral2 {
+        width: 20%;
+        float: left;
+    }
+    .page-content8 h3 {
+        font-size: 2.5vw;
+    }
+    #lateral2 {
+        width: 25%;
+        float: left;
+    }
+    #principal0 {
+        width: 30%;
+    }
+    .open-modal p {
+        font-size: 1.2vw;
+    }
+    .modal-content img {
+        width: 20vw;
+    }
+    .modal p {
+        font-size: 2vw;
+    }
+    .modal p+p {
+        margin-top: 1rem;
+        font-size: 1.2vw;
+    }
+    #lista5>li {
+        font-size: 1.2vw;
+    }
+    .contener0 {
+        width: 100%;
+        height: 30vw;
+    }
+    img.cont {
+        width: 20vw;
+    }
+    .page-content51 h3 {
+        font-size: 2.5vw;
+    }
+    #lateral26 {
+        width: 25%;
+    }
+    .prev0 {
+        height: 10%;
+        width: 80%;
+        margin: 1vw auto;
+        border-radius: 1vw;
+    }
+    #lateral0 {
+        width: 50%;
+        margin: 1vw;
+    }
+    
+    
+    .page-content10 h3 {
+        font-size: 2.5vw;
+    }
+    #latera125 {
+        width: 12%;
+    }
+    .contener {
+        height: 28vw;
+    }
+    .grid {
+        grid-gap: 0.5vw;
+    }
+    #contenedor45 {
+        width: 60vw;
+        height: 30vw;
+        margin-left: 18vw;
+    }
+    .page-content51 {
+        width: 40%;
+        height: 10%;
+    }
+}

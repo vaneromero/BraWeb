@@ -1,0 +1,312 @@
+#tarjeta {
+    width: 100%;
+    background: linear-gradient(#d4ecf1c0, #dce2c5b4);
+    border-radius: 2.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+}
+
+#tarjeta h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    color: #000000;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+}
+
+#tarjeta h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+#tarjeta h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #4c2b6b;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+#tarjeta h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #33267a;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+#tarjeta1 {
+    width: 100%;
+    background: linear-gradient(#d4ecf1c0, #dce2c5b4);
+    border-radius: 2.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+}
+
+#tarjeta1 h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    color: #000000;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+}
+
+#tarjeta1 h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+#tarjeta1 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #4c2b6b;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+#tarjeta1 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #33267a;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+
+
+.page-content5a {
+    background: linear-gradient(#e563f7ab, #63e1f7ab);
+    height: 10%;
+    width:20%;
+    margin-top: 2vw;
+    justify-content: left;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+  
+  .page-content5a h3 {
+    margin: 1%;
+    font-size: 4vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+#contenedorPr61 {
+    width: 100%;
+    height: 100%;
+    margin-top: 2vw;
+    text-align: center;
+    padding-top: 1px;
+    background: #cf151560;
+    border-radius: 3vw;
+    border-color: #000000;
+}
+.conten{
+    padding-top: 2vw;
+}
+
+#tarjetaa {
+    width: 100%;
+    background: linear-gradient(#e3f3f7ce, #eff3ddcb);
+    border-radius: 2.5vw;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+#tarjetaa h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2vw;
+}
+
+#tarjetaa h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2vw;
+    padding: 5px;
+}
+
+#tarjetaa h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #4c2b6b;
+    font-size: 2.5vw;
+}
+
+#tarjetaa h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #33267a;
+    font-size: 2vw;
+}
+
+#tarjetaa1 {
+    width: 100%;
+    background: linear-gradient(#e3f3f7ce, #eff3ddcb);
+    border-radius: 2.5vw;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+#tarjetaa1 h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2vw;
+}
+
+#tarjetaa1 h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2vw;
+    padding: 5px;
+}
+
+#tarjetaa1 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #4c2b6b;
+    font-size: 2.5vw;
+}
+
+#tarjetaa1 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #33267a;
+    font-size: 2vw;
+}
+/*----------------avisos----------------------*/
+#botonAbrir {
+    z-index: 100;
+    position: fixed;
+    margin: 2px;
+    top: 5vw;
+    left: 96%;
+    border-radius: 80px;
+    background-color:white;
+     padding-left: 1%;
+     padding-right: 1%;
+}
+
+#barraflotantewcv {
+    z-index: 100;
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 68%;
+    margin: 1vw;
+    width: 30%;
+    background: #8c9cf3;
+    height: auto;
+    border-radius: 2vw;
+    text-align: center;
+    padding-top: 2px;
+}
+div#listaAvisos {
+    width: 100%;
+    position: absolute;
+    overflow: scroll;
+    height: 60vw;
+    background: linear-gradient(#e663f760, #63e1f775);
+    margin-top: 2vw;
+    border-radius: 2vw;
+}
+#barraAvisos {
+    position: relative;
+}
+h3#tituloAvisos{
+    margin: 1px;
+    font-size: 3vw;
+}
+#barraAvisos2 {
+    float: right;
+    font-size: 5vw;
+}
+.badge-sonar1:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border: 2px solid #980303;
+    opacity: 0;
+    left: 24%;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+
+    animation: sonar 1.5s infinite;
+}
+#fas1 {
+    font-weight: 900;
+    color: #781010;
+    background-color:white;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 80px;
+}
+@media only screen and (min-width: 700px) {
+    #barraAvisos2 {
+        font-size: 3vw;
+    }
+    #tarjetaa h5, #tarjetaa h2, #tarjetaa h4, #tarjetaa h4, #tarjetaa h4, #tarjetaa1 h4, #tarjetaa1 h2, #tarjetaa1 h5 {
+        font-size: 1.2vw;
+    }
+    #tarjetaa, #tarjetaa1 {
+       border-radius: 1vw;
+    }
+    div#listaAvisos {
+        position: absolute;
+        overflow: scroll;
+        height: 30vw;
+        background: linear-gradient(#e663f760, #63e1f775);
+        margin-top: 1vw;
+        border-radius: 1vw;
+    }
+    #botonAbrir {
+        margin: 2px;
+        padding: 0.7vw 1vw;
+        font-size: 2vw;
+    }
+    .badge-sonar1:after {
+        top: 20%;
+        left: 20%;
+    }
+   
+}
+@media only screen and (max-width: 699px) {
+    #barraflotantewcv {
+        left: 25%;
+        margin: 1vw;
+        width: 70%;
+    }
+    div#listaAvisos {
+        height: 80vw;
+    }
+#botonAbrir {
+    margin: 2px;
+    top: 6vw;
+    left: 93%;
+    font-size: 5vw;
+}
+.badge-sonar1:after {
+    top: 10%;
+    left: 15%;
+}
+}
